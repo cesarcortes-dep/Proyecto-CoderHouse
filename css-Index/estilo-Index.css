@@ -1,0 +1,212 @@
+html {
+  font-size: 62, 5%;
+  font-family: "Roboto Serif", serif;
+}
+.body {
+  height: auto;
+  background-color: grey;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+/*-------------SECCION HEADER(NO NECESITA CAMBIO)-------------*/
+
+.header {
+  background-color: transparent;
+  padding: 0;
+  /*----------------------*/
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+/*-------------SECCION HEADER DEL CONTENIDO DE LA LISTA-------------*/
+
+.header a {
+  font-weight: bold;
+  color: #2ec4b6;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.header .navegador {
+  text-align: center;
+  padding: 34px 0;
+}
+
+/*-------------SECCION NAVEGADOR-------------*/
+
+.navegador {
+  background-color: gray;
+  border: #2ec4b6 3px solid;
+  border-radius: 10px;
+  /* --------------------- */
+  background-image: url(IdealTrip.png);
+  background-size: 250px;
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+
+.navegador ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navegador ul li {
+  display: inline-block;
+  font-size: 25px;
+  padding: 10px;
+}
+
+.navegador ul li a:hover {
+  background: #ffffff;
+  transition: all 0.3s linear;
+  border-radius: 5px;
+  border: 1px 1px;
+}
+
+.grillas {
+  /* GRILLAS */
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 450px 600px 450px 550px;
+  grid-template-areas:
+    "contenido_principal"
+    "prueba_esto "
+    "video_de_receta"
+    "sobre_mi ";
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+/*-------------SECCION MAIN------------*/
+.main {
+  padding-top: 5rem;
+  margin: 50px 0;
+  background-color: transparent;
+}
+/*-------------CONTENIDO PRINCIOPAL------------*/
+.contenido_principal {
+  /* NOMBRE DEL RECUADO DE GRILLA */
+  grid-area: contenido_principal;
+  /* GRILLAS */
+  display: grid;
+  grid-template-areas: "galeria  descripcion";
+  grid-template-columns: 50% 50%;
+  text-align: center;
+  /* ESPACIO ENTRE GRILLAS */
+  grid-column-gap: 3px;
+  grid-row-gap: 15px;
+}
+.descripcion {
+  /* NOMBRE DEL RECUADO DE GRILLA */
+  grid-area: descripcion;
+  /* ------- */
+  text-align: justify;
+  background-color: aquamarine;
+}
+
+.galeria {
+  grid-area: galeria;
+  background-color: lightcoral;
+  background-position: center;
+  height: 100%;
+  background-image: url(https://place.dog/300/200);
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+/* -------------------------PREUBA ESTO------------------------------ */
+.prueba_esto {
+  text-align: center;
+  grid-area: prueba_esto;
+  background-color: lightskyblue;
+  padding: 100px;
+}
+.grillas_prueba_esto {
+  display: grid;
+  grid-template-areas: "receta_1 descripcionR1 receta_2 descripcionR2";
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  background-color: transparent;
+}
+.receta_1 {
+  grid-area: receta_1;
+  background-image: url(https://placedog.net/500);
+  background-color: green;
+}
+.descripcionR1 {
+  grid-area: descripcionR1;
+  background-color: lightgreen;
+}
+
+.receta_2 {
+  grid-area: receta_2;
+  background-image: url(https://placedog.net/500);
+  background-color: pink;
+}
+
+.descripcionR2 {
+  grid-area: descripcionR2 ;
+  background-color: lightpink;
+}
+
+
+
+/* -------------------------RECETAS------------------------------ */
+
+.video_receta {
+  grid-area: video_de_receta;
+  text-align: center;
+  background-color: lightslategray;
+  padding: 50px;
+}
+.video_receta h1 {
+  text-align: center;
+}
+
+/* ------------------------SOBRE MI------------------------------- */
+.sobre_mi{
+  text-align: center;
+  grid-area: sobre_mi;
+  background-color: lightblue;
+}
+
+.grillas_sobre_mi{
+  text-align: center;
+  display: grid;
+  grid-template-areas: "foto_de_perfil biografia_corta";
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 10px;
+}
+.foto_de_perfil{
+  background-color: azure;
+  grid-area: foto_de_perfil;
+}
+
+.biografia_corta{
+  background-color: blanchedalmond;
+  grid-area: biografia_corta;
+}
+
+/* --------------------------FOOTER----------------------------- */
+.footer {
+  background-color: green;
+  border: #1b4965 3px solid;
+  width: 100%;
+  height: 100%;
+}
+
+.footer .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 5px 50px;
+}
