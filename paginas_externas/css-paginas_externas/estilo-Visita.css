@@ -84,7 +84,7 @@ html {
   .grillas {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 450px 600px 450px 340px;
+    grid-template-rows: 450px 12px 12px 12px;
     grid-template-areas:
       "contenido_principal"
       "prueba_esto "
@@ -102,18 +102,19 @@ html {
   }
   /*-------------CONTENIDO PRINCIOPAL------------*/
   .contenido_principal {
-    padding: 20px;
+    padding: 70px;
     grid-area: contenido_principal;
     display: grid;
     grid-template-areas: "galeria descripcion";
     grid-template-columns: 50% 50%;
     text-align: center;
-    grid-column-gap: 3px;
+    grid-column-gap: 120px;
     grid-row-gap: 15px;
     align-items: center;
     justify-content: center;
   }
   .descripcion {
+    height: 100%;
     grid-area: descripcion;
     text-align: center;
     background-color: aquamarine;
@@ -126,7 +127,7 @@ html {
     height: 100%;
     background-image: url(https://place.dog/300/200);
     background-repeat: no-repeat;
-    background-size: 300px;
+    background-size: 400px;
   }
   
   /* -------------------------PREUBA ESTO------------------------------ */
@@ -386,5 +387,56 @@ html {
   #check:checked ~ .navegadorLista{
     right: 10;
   } */
+  }
+  @media screen and (max-width: 425px) {
+
+    .header .navegador{
+      background-position: bottom center;
+      background-size: 50px;
+      padding: 42px 0px;
+    }
+    .grillas {
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 380px 12px 12px 12px;
+      grid-template-areas:
+        "contenido_principal"
+        "prueba_esto "
+        "video_de_receta"
+        "sobre_mi ";
+      grid-column-gap: 10px;
+      grid-row-gap: 15px;
+    }
+    .contenido_principal {
+      width: 112%;
+      padding: 20px;
+      grid-area: contenido_principal;
+      display: grid;
+      grid-template-areas: "galeria galeria descripcion descripcion";
+      grid-template-columns: 150px 100px 100px 150px;
+      text-align: center;
+      grid-column-gap: 3px;
+      grid-row-gap: 15px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .footer {
+      padding: 46px;
+      font-size: 7px;
+      background-image: url(IdealTripLogo.png);
+      background-repeat: no-repeat;
+      background-size: 50px;
+      background-position: 3% 20%;
+      background-color: #7400b8;
+      border: #ffffff 3px solid;
+      border-radius: 5px;
+      border: 1px 1px;
+    }
+  
+    .footer .grupo1 {
+      background-size: 50px;
+      justify-content: center;
+    }
   }
   

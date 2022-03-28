@@ -11,32 +11,6 @@ html {
 }
 
 /*-------------SECCION HEADER(NO NECESITA CAMBIO)-------------*/
-
-.header {
-  background-color: #7400b8;
-  padding: 0;
-  /*----------------------*/
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
-}
-
-/*-------------SECCION HEADER DEL CONTENIDO DE LA LISTA-------------*/
-
-.header a {
-  font-weight: bold;
-  color: #48bfe3;
-  text-decoration: none;
-  padding: 8px 0;
-}
-
-.header .navegador {
-  background-color: transparent;
-  text-align: center;
-  padding: 34px 0;
-}
-
 /* .mostrar_menu,
 .esconder_menu {
   font-size: 30px;
@@ -52,7 +26,33 @@ html {
   display: none;
 }
  */
+ /* ----------SECCION HEADER---------- */
+.header {
+  background-color: #7400b8;
+  padding: 0;
+  /*----------------------*/
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.header a {
+  font-weight: bold;
+  color: #48bfe3;
+  text-decoration: none;
+  padding: 8px 0;
+}
+
+.header .navegador {
+  background-color: transparent;
+  text-align: center;
+  padding: 34px 0;
+}
+
+
 /*-------------SECCION NAVEGADOR-------------*/
+
 .navegador {
   border: #ffffff 3px solid;
   border-radius: 10px;
@@ -81,6 +81,13 @@ html {
   border: 1px 1px;
 }
 
+/*-------------SECCION MAIN------------*/
+.main {
+  padding-top: 5rem;
+  margin: 50px 0;
+  background-color: transparent;
+}
+
 .grillas {
   display: grid;
   grid-template-columns: 100%;
@@ -94,13 +101,7 @@ html {
   grid-row-gap: 15px;
 }
 
-/*-------------SECCION MAIN------------*/
-.main {
-  padding-top: 5rem;
-  margin: 50px 0;
-  background-color: transparent;
-}
-/*-------------CONTENIDO PRINCIOPAL------------*/
+/*-------------CONTENIDO PRINCIPAL------------*/
 .contenido_principal {
   padding: 20px;
   grid-area: contenido_principal;
@@ -113,6 +114,8 @@ html {
   align-items: center;
   justify-content: center;
 }
+
+
 .descripcion {
   grid-area: descripcion;
   text-align: center;
@@ -129,12 +132,12 @@ html {
   background-size: 300px;
 }
 
-/* -------------------------PREUBA ESTO------------------------------ */
+/* -------------------------PRUEBA ESTO------------------------------ */
 .prueba_esto {
   display: flex;
   text-align: center;
   grid-area: prueba_esto;
-  background-color: lightskyblue;
+  background-color: #48bfe3;
   padding: 100px;
   flex-direction: column;
   align-content: center;
@@ -168,15 +171,14 @@ html {
   background-color: lightpink;
 }
 
-/* -------------------------RECETAS------------------------------ */
+/* -------------------------VIDEO RECETA RECETA------------------------------ */
 
 .video_receta {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   grid-area: video_de_receta;
-  /* text-align: center; */
-  background-color: lightslategray;
+  background-color: #5e60ce;
   padding: 20px;
   align-content: space-around;
   align-items: center;
@@ -198,17 +200,24 @@ html {
 
   padding: 20px;
   text-align: center;
-  background-color: lightblue;
+  background-color: #48bfe3;
 }
 
 .grillas_sobre_mi {
+  align-items: center;
   text-align: center;
+  justify-content: center;
   display: grid;
   grid-template-areas: "foto_de_perfil biografia_corta";
   grid-template-columns: 50% 50%;
   grid-column-gap: 10px;
 }
 .foto_de_perfil {
+  height: 230px;
+  background-image: url(https://placedog.net/420);
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: center;
   background-color: azure;
   grid-area: foto_de_perfil;
 }
@@ -221,6 +230,7 @@ html {
 /* --------------------------FOOTER----------------------------- */
 
 .footer {
+  color: #48bfe3;
   background-image: url(IdealTripLogo.png);
   background-repeat: no-repeat;
   background-size: 120px;
@@ -243,6 +253,17 @@ html {
 
 /* RESPONSIVE ANDROID*/
 @media screen and (max-width: 425px) {
+  .header .navegador{
+    background-position: bottom center;
+    background-size: 50px;
+    padding: 42px 0px;
+  }
+.video_receta{
+  width: 113%;
+}
+.sobre_mi{
+  width: 113%;
+}
   .grillas {
     display: grid;
     grid-template-columns: 100%;
@@ -292,11 +313,7 @@ html {
     padding: 50px;
     align-content: center;
   }
-  .navegador {
-    background-position: center;
-    background-image: url(IdealTripLogo.png);
-    background-size: 50px;
-  }
+ 
   .navegadorLista ul {
     text-align: center;
   }
@@ -305,11 +322,24 @@ html {
     display: inline-block;
     padding: 3px;
   }
+  .grupo1{
+    background-size: 50px;
+  }
+  .box2{
+    font-size: 7px;
+    background-size: 50px;
+  }
+
+  .box3{
+    font-size: 7px;
+    background-size: 50px;
+  }
   .footer {
-    font-size: 11.5px;
+    padding: 46px;
+    font-size: 7px;
     background-image: url(IdealTripLogo.png);
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 50px;
     background-position: 3% 20%;
     background-color: #7400b8;
     border: #ffffff 3px solid;
@@ -318,6 +348,7 @@ html {
   }
 
   .footer .grupo1 {
+    background-size: 50px;
     justify-content: center;
   }
 }
