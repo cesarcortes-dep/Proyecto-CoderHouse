@@ -4,7 +4,7 @@ html {
 }
 .body {
   height: auto;
-  background-color: #5e60ce;
+  background-color: transparent;
   font-size: 1rem;
   line-height: 1.6rem;
   margin: 0;
@@ -26,11 +26,10 @@ html {
   display: none;
 }
  */
- /* ----------SECCION HEADER---------- */
+/* ----------SECCION HEADER---------- */
 .header {
-  background-color: #7400b8;
+  background-color: #ad2e24;
   padding: 0;
-  /*----------------------*/
   position: fixed;
   width: 100%;
   left: 0;
@@ -47,34 +46,29 @@ html {
 .header .navegador {
   background-color: transparent;
   text-align: center;
-  padding: 34px 0;
+  padding: 37px 0;
 }
 
-
 /*-------------SECCION NAVEGADOR-------------*/
-
 .navegador {
-  border: #ffffff 3px solid;
-  border-radius: 10px;
+  border: #ffffff 5px solid;
+  border-radius: 1.5px;
   background-image: url(IdealTrip.png);
   background-size: 250px;
   background-repeat: no-repeat;
   background-position: top left;
 }
 
-.navegador ul {
+.navegador li {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.navegador ul li {
   display: inline-block;
   font-size: 25px;
   padding: 10px;
 }
 
-.navegador ul li a:hover {
+.navegador li a:hover {
   background: #ffffff;
   transition: all 0.3s linear;
   border-radius: 5px;
@@ -91,84 +85,212 @@ html {
 .grillas {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 450px 600px 450px 340px;
+  grid-template-rows: 450px 550px 450px 340px;
   grid-template-areas:
     "contenido_principal"
     "prueba_esto "
     "video_de_receta"
     "sobre_mi ";
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
+  /* grid-column-gap: 10px;
+  grid-row-gap: 15px; */
 }
 
 /*-------------CONTENIDO PRINCIPAL------------*/
 .contenido_principal {
+  background-color: lightcoral /* #48BFE3 */;
   padding: 20px;
   grid-area: contenido_principal;
   display: grid;
-  grid-template-areas: "galeria descripcion";
-  grid-template-columns: 50% 50%;
+  grid-template-areas: "galeria descripcion ";
+  grid-template-columns: 35% 50%;
   text-align: center;
   grid-column-gap: 3px;
   grid-row-gap: 15px;
   align-items: center;
   justify-content: center;
 }
+.titulo_descripcion {
+  font-size: small;
+  text-align: center;
+}
+.titulo_parrafo {
+  margin: 30px;
+  text-align: left;
+}
+.titulo_parrafo a {
+  color: red;
+  text-decoration: none;
+}
 
-
+.titulo_parrafo a:hover {
+  background: #ffffff;
+  transition: all 0.3s linear;
+  border-radius: 3px;
+  border: 1px 1px;
+}
+.parrafo_descripcion {
+  margin: 30px;
+  font-size: 16px;
+  text-align: center;
+}
+.costo {
+  margin: 30px;
+  text-align: left;
+  color: red;
+}
 .descripcion {
+  border: 5px solid #7400b8;
+  font-size: 15px;
+  height: 80%;
   grid-area: descripcion;
   text-align: center;
-  background-color: aquamarine;
+  background-color: transparent;
 }
-
 .galeria {
   grid-area: galeria;
-  background-color: lightcoral;
+  background-color: #d6a24c;
   background-position: center;
   height: 100%;
-  background-image: url(https://place.dog/300/200);
+  background-image: url(BannerBMS.png);
   background-repeat: no-repeat;
-  background-size: 300px;
+  background-size: 366px;
 }
+/*-------------CONTENIDO PRINCIPAL------------*/
 
 /* -------------------------PRUEBA ESTO------------------------------ */
+/* MOUSE IN */
+.prueba_esto:hover {
+  background-color: #ad2e24;
+  transition: 0.6s;
+}
+/* MOUSE OUT */
+.prueba_esto:not(:hover) {
+  background-color: #48bfe3;
+  transition: 0.6s;
+}
 .prueba_esto {
   display: flex;
   text-align: center;
   grid-area: prueba_esto;
   background-color: #48bfe3;
-  padding: 100px;
+  padding: 50px;
   flex-direction: column;
   align-content: center;
 }
 .grillas_prueba_esto {
   display: grid;
   grid-template-areas: "receta_1 descripcionR1 receta_2 descripcionR2";
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: 30% 20% 30% 20%;
+  height: 100%;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   background-color: transparent;
 }
 .receta_1 {
   grid-area: receta_1;
-  background-image: url(https://placedog.net/500);
+  background-image: url(Enpanadas.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-color: green;
 }
 .descripcionR1 {
+  /* display: none; */
   grid-area: descripcionR1;
   background-color: lightgreen;
 }
 
 .receta_2 {
   grid-area: receta_2;
-  background-image: url(https://placedog.net/500);
+  background-image: url(Picada.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-color: pink;
 }
 
 .descripcionR2 {
+  /* display: none; */
   grid-area: descripcionR2;
   background-color: lightpink;
+}
+
+.boton1 {
+  display: inline-block;
+  font-family: "Roboto Serif", serif;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #141414;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.boton1 span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3 ease all;
+}
+.boton1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.boton1:hover::after {
+  top: 0;
+}
+
+.boton2 {
+  display: inline-block;
+  font-family: "Roboto Serif", serif;
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 50px;
+  font-size: 20px;
+  background-color: #141414;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+}
+.boton2 span {
+  position: relative;
+  z-index: 2;
+  transition: 0.3 ease all;
+}
+.boton2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+  z-index: 1;
+  top: -50px;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.boton2:hover::after {
+  top: 0;
 }
 
 /* -------------------------VIDEO RECETA RECETA------------------------------ */
@@ -251,23 +373,24 @@ html {
   justify-content: center;
 }
 
-/* RESPONSIVE ANDROID*/
+/* -------------RESPONSIVE ANDROID-------------------*/
+
 @media screen and (max-width: 425px) {
-  .header .navegador{
+  .header .navegador {
     background-position: bottom center;
     background-size: 50px;
     padding: 42px 0px;
   }
-.video_receta{
-  width: 113%;
-}
-.sobre_mi{
-  width: 113%;
-}
+  .video_receta {
+    width: 113%;
+  }
+  .sobre_mi {
+    width: 113%;
+  }
   .grillas {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 380px 790px 450px 450px;
+    grid-template-rows: 510px 700px 450px 340px;
     grid-template-areas:
       "contenido_principal"
       "prueba_esto "
@@ -276,19 +399,7 @@ html {
     grid-column-gap: 10px;
     grid-row-gap: 15px;
   }
-  .contenido_principal {
-    width: 112%;
-    padding: 20px;
-    grid-area: contenido_principal;
-    display: grid;
-    grid-template-areas: "galeria galeria descripcion descripcion";
-    grid-template-columns: 150px 100px 100px 150px;
-    text-align: center;
-    grid-column-gap: 3px;
-    grid-row-gap: 15px;
-    align-items: center;
-    justify-content: center;
-  }
+
   .grillas_prueba_esto {
     display: grid;
     grid-template-areas:
@@ -313,7 +424,7 @@ html {
     padding: 50px;
     align-content: center;
   }
- 
+
   .navegadorLista ul {
     text-align: center;
   }
@@ -322,15 +433,15 @@ html {
     display: inline-block;
     padding: 3px;
   }
-  .grupo1{
+  .grupo1 {
     background-size: 50px;
   }
-  .box2{
+  .box2 {
     font-size: 7px;
     background-size: 50px;
   }
 
-  .box3{
+  .box3 {
     font-size: 7px;
     background-size: 50px;
   }
