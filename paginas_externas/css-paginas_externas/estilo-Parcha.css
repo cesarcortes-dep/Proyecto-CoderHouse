@@ -1,252 +1,320 @@
 html {
-    font-size: 62, 5%;
-    font-family: "Roboto Serif", serif;
-  }
-  .body {
-    height: auto;
-    background-color: #5e60ce;
-    font-size: 1rem;
-    line-height: 1.6rem;
-    margin: 0;
-  }
+  margin: 0;
+  padding: 0;
+  font-size: 62, 5%;
+}
+.body {
+  font-family: "Roboto Serif", serif;
+  background-color: FBFAFF;
+  background-color: #5184a4;
+}
+
+.navbar-light {
+  background-color: red;
+}
+
+.header a {
+  font-weight: bold;
+  text-decoration: none;
+  margin: 25px;
+}
+.header .navegador {
+  margin-bottom: 100px;
+  padding: 10px;
+  text-align: center;
+}
+
+.navegador li {
+  background-color: #a16523;
+  font-size: 25px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.navegador ul {
+  padding-left: 0;
+}
+.navegador {
+  grid-area: header;
+  border-top: #b02e0c 5px solid;
+  border-bottom: #b02e0c 5px solid;
+  margin-top: 0;
+  text-align: left;
+  background-color: #5184a4;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 13px;
+  border: 3px solid #b02e0c;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.grillas {
+  display: grid;
+  grid-template-rows: 680px;
+  grid-template-columns: 2fr;
+  grid-template-areas: "contenido-principal";
+}
+
+/* ------------CONTENIDO PRINCIPAL------------ */
+.contenido-principal {
+  grid-area: contenido-principal;
+  display: flex;
+  grid-template-areas: "galeria";
+
+  text-align: center;
+  grid-column-gap: 3px;
+  grid-row-gap: 15px;
+  align-items: center;
+  justify-content: center;
   
-  /*-------------SECCION HEADER(NO NECESITA CAMBIO)-------------*/
-  /* .mostrar_menu,
-  .esconder_menu {
-    font-size: 30px;
-    cursor: pointer;
-    display: none;
-    transition: 0.4s;
-  }
-  .mostrar_menu {
-    order: 1;
-  }
   
-  #check {
-    display: none;
-  }
-   */
-   /* ----------SECCION HEADER---------- */
-  .header {
-    background-color: #7400b8;
-    padding: 0;
-    /*----------------------*/
+  background-color: #c1bfb5;
+}
+
+
+/* ------------CONTENIDO PRINCIPAL------------ */
+
+/*--------------------------------------*/
+
+/* ------------PRUEBA ESTO------------ */
+
+
+/* ------------SOBRE MI------------ */
+
+/*--------------------------------------*/
+
+/* ------------FOOTER------------ */
+
+.footer {
+  width: 100%;
+  background-color: lightsteelblue;
+  line-height: 1.6;
+  text-decoration: none;
+}
+.footer .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0;
+}
+
+.footer .grupo1 .box1 figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .grupo1 .box1 figure img {
+  width: 250px;
+}
+
+.footer .grupo1 .box2 h2 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo1 .box3 h2 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo1 .box2 p {
+  color: black;
+  margin-bottom: 10px;
+}
+.footer .grupo1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transform: all 300ms ease;
+}
+.footer .grupo1 .red-social a:hover {
+  color: red;
+}
+
+.footer .grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: lightsteelblue;
+}
+
+.box3 ul {
+  padding-left: 0;
+}
+.box3 li {
+  list-style: none;
+}
+.box3 a {
+  text-decoration: none;
+}
+/* ------------FOOTER------------ */
+
+/* -------------------------------MEDIA QUERY---------------------------------------- */
+@media screen and (max-width: 425px) {
+  .navbar {
     position: fixed;
+  }
+  .header {
+    padding: 0;
     width: 100%;
     left: 0;
     top: 0;
   }
-  
   .header a {
+    color: black;
     font-weight: bold;
-    color: #48bfe3;
     text-decoration: none;
-    padding: 8px 0;
+    margin: 5px;
   }
-  
   .header .navegador {
-    background-color: transparent;
-    text-align: center;
-    padding: 34px 0;
+    padding: 5px;
+    text-align: left;
   }
-  
-  
-  /*-------------SECCION NAVEGADOR-------------*/
-  
-  .navegador {
-    border: #ffffff 3px solid;
-    border-radius: 10px;
-    background-image: url(IdealTrip.png);
-    background-size: 250px;
-    background-repeat: no-repeat;
-    background-position: top left;
-  }
-  
-  .navegador ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  .navegador ul li {
-    display: inline-block;
+  .navegador li {
     font-size: 25px;
-    padding: 10px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
   }
-  
-  .navegador ul li a:hover {
-    background: #ffffff;
-    transition: all 0.3s linear;
-    border-radius: 5px;
-    border: 1px 1px;
+  .navegador ul {
+    padding-left: 0;
   }
-  
-  /*-------------SECCION MAIN------------*/
-  .main {
-    padding-top: 5rem;
-    margin: 50px 0;
-    background-color: transparent;
+  .navegador {
+    border: #a16523 5px solid;
+    margin-top: 0;
+    text-align: left;
+    background-color: beige;
   }
-  
+
+  .logo {
+    display: block;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 13px;
+    border: 3px solid gray;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
   .grillas {
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 450px 600px 450px 340px;
-    grid-template-areas:
-      "contenido_principal"
-      "prueba_esto "
-      "video_de_receta"
-      "sobre_mi ";
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
+    grid-template-rows: 1040px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "contenido-principal";
   }
-  
-  /*-------------CONTENIDO PRINCIPAL------------*/
-  .contenido_principal {
-    padding: 20px;
-    grid-area: contenido_principal;
-    display: grid;
-    grid-template-areas: "galeria descripcion";
-    grid-template-columns: 50% 50%;
-    text-align: center;
-    grid-column-gap: 3px;
-    grid-row-gap: 15px;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  
-  .descripcion {
-    grid-area: descripcion;
-    text-align: center;
-    background-color: aquamarine;
-  }
-  
-  .galeria {
-    grid-area: galeria;
-    background-color: lightcoral;
-    background-position: center;
-    height: 100%;
-    background-image: url(https://place.dog/300/200);
-    background-repeat: no-repeat;
-    background-size: 300px;
-  }
-  
-  /* -------------------------PRUEBA ESTO------------------------------ */
-  .prueba_esto {
-    display: flex;
-    text-align: center;
-    grid-area: prueba_esto;
-    background-color: #48bfe3;
-    padding: 100px;
-    flex-direction: column;
-    align-content: center;
-  }
-  .grillas_prueba_esto {
-    display: grid;
-    grid-template-areas: "receta_1 descripcionR1 receta_2 descripcionR2";
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    background-color: transparent;
-  }
-  .receta_1 {
-    grid-area: receta_1;
-    background-image: url(https://placedog.net/500);
-    background-color: green;
-  }
-  .descripcionR1 {
-    grid-area: descripcionR1;
-    background-color: lightgreen;
-  }
-  
-  .receta_2 {
-    grid-area: receta_2;
-    background-image: url(https://placedog.net/500);
-    background-color: pink;
-  }
-  
-  .descripcionR2 {
-    grid-area: descripcionR2;
-    background-color: lightpink;
-  }
-  
-  /* -------------------------VIDEO RECETA RECETA------------------------------ */
-  
-  .video_receta {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    grid-area: video_de_receta;
-    background-color: #5e60ce;
-    padding: 20px;
-    align-content: space-around;
-    align-items: center;
-  }
-  .video_receta h1 {
-    text-align: center;
-  }
-  
-  /* ------------------------SOBRE MI------------------------------- */
-  
-  .sobre_mi {
-    grid-area: sobre_mi;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: stretch;
-    align-items: center;
-    flex-wrap: wrap;
-  
-    padding: 20px;
-    text-align: center;
-    background-color: #48bfe3;
-  }
-  
-  .grillas_sobre_mi {
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    display: grid;
-    grid-template-areas: "foto_de_perfil biografia_corta";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
-  }
-  .foto_de_perfil {
-    height: 230px;
-    background-image: url(https://placedog.net/420);
-    background-repeat: no-repeat;
-    background-size: 20%;
-    background-position: center;
-    background-color: azure;
-    grid-area: foto_de_perfil;
-  }
-  
-  .biografia_corta {
-    background-color: blanchedalmond;
-    grid-area: biografia_corta;
-  }
-  
-  /* --------------------------FOOTER----------------------------- */
-  
-  .footer {
-    color: #48bfe3;
-    background-image: url(IdealTripLogo.png);
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position: 2% 10%;
-    background-color: #7400b8;
-    border: #ffffff 3px solid;
-    border-radius: 5px;
-    border: 1px 1px;
-    width: 100%;
-    height: 200px;
-  }
-  
+
+  /* ------------VIDEO RECETA------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------SOBRE MI------------ */
+
+
+  /* ------------SOBRE MI------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------FOOTER------------ */
+
   .footer .grupo1 {
-    display: flex;
     width: 100%;
-    max-width: 1200px;
-    margin: 0px;
-    justify-content: center;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0;
   }
+
+  .footer p {
+    padding: 3px 15px;
+    display: block;
+  }
+
+  .footer hr {
+    height: 1px;
+    background-color: black;
+  }
+  .box3 ul {
+    padding-left: 0;
+  }
+  .box3 li {
+    list-style: none;
+  }
+  .box3 a {
+    text-decoration: none;
+  }
+
+  /* ------------FOOTER------------ */
+}
+
+/* @media screen and (max-width: 806px) {
+    .grillas {
+      display: grid;
+      grid-template-rows: 470px 670px 550px 350px;
+      grid-template-columns: 2fr;
+      grid-template-areas:
+        "contenido-principal"
+        "prueba-esto"
+        "video-receta"
+        "sobre-mi";
+    }
+  
+  
+    .contenido-principal {
+      grid-area: contenido-principal;
+      display: grid;
+      grid-template-areas: "galeria descripcion ";
+      grid-template-columns: 40% 60%;
+      text-align: center;
+      grid-column-gap: 3px;
+      grid-row-gap: 15px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+      margin-top: 190px;
+      background-color: #c1bfb5;
+  }
+  
+  
+  
+  .sobre-mi {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "foto-de-perfil bigrafia-corta";
+   
+  } */

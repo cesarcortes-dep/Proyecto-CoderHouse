@@ -1,137 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="shortcut icon" href="css-paginas_externas/IdealTripLogo.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css-paginas_externas/estilo-Visita.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Visita</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;700;900&display=swap" rel="stylesheet">
-    <title>Ideal Trip hola</title>
+
+    <link rel="stylesheet" href="css-paginas_externas/estilo-Visita.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/2f169e8579.js" crossorigin="anonymous"></script>
 </head>
 
+
 <body class="body">
-    <!-- ENCABEZADO -->
-    <header class="header">
-        <div class="contenedor logo-nav-contenedor">
-            <!-- NAVEGADOR -->
-            <nav class="navegador">
-                <ul class="navegadorLista">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="parcha.html">Parcha</a></li>
-                    <li><a href="festeja.html">Festeja</a></li>
-                    <li><a href="unetenos.html">Unetenos</a></li>
-                    <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                </ul>
-            </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <header class="header col-12">
+
+
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="css-paginas_externas/IdealTrip.png" alt="IdealTrip" width="220px">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link" href="parcha.html">Parcha</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="festeja.html">Festeja</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="unetenos.html">Unetenos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="sobre-nosotros.html">Sobre nosotros</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+
+            </header>
         </div>
-    </header>
+    </div>
 
 
 
 
-    <!-- CONTENIDO PRINCIPAL DE LA PAGINA -->
 
-    <main class="main">
-        <div class="grillas">
-            <div class="contenido_principal">
+    <div class="container-fluid">
+        <main class="main">
+            <div class="grillas">
+                <div class="row">
+                    <div class="contenido-principal .col-sm-12 .col-md-6 .col-lg-4">
+                        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="css-paginas-externas/comuna13.jpg" class="d-block w-100" alt="..."
+                                        width="350px" height="350px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>First slide label</h5>
+                                        <p>Some representative placeholder content for the first slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="css-paginas-externas/penol.jpg" class="d-block w-100" alt="..."
+                                        width="350px" height="350px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Some representative placeholder content for the second slide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="css-paginas-externas/parqueExplora.png" class="d-block w-100" alt="..."
+                                        width="350px" height="350px">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Some representative placeholder content for the third slide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="descripcion .col-sm-12 .col-md.6 .col-lg-8 .col-xl-2">
 
-                <div class="descripcion">
-                    <h1>CONTENIDO PRINCIPAL</h1>
-                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque reiciendis perspiciatis optio
-                        laboriosam
-                        architecto! Optio consequuntur est necessitatibus laudantium facilis qui minima aliquam atque,
-                        vero
-                        ipsam
-                        delectus libero deserunt quidem.
-                    </p>
+                            <div class="titulo_descripcion">
+                                <h1>MEDELLÍN MAGICO!</h1>
+                            </div>
+
+                            <div class="titulo_parrafo">
+                                <h3>LOS<a
+                                        href="https://www.tripadvisor.co/Attractions-g297478-Activities-Medellin_Antioquia_Department.html"
+                                        target="_blank">
+                                        MEJORES LUGARES EN MEDELLIN </a>QUE DEBES VISITAR</h3>
+                            </div>
+
+                            <div class="parrafo_descripcion">
+                                <h1></h1>
+                                <p class="lead"> Medellín no tiene el titulo de "la ciudad de la eterna primavera por
+                                    nada"
+                                </p>
+                            </div>
+
+                            <div class="costo">
+                                <h2>cheka estos lugares</h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
-                <div class="galeria"></div>
             </div>
+        </main>
+    </div>
 
 
-            <!-- <div class="prueba_esto">
-                <h1>PRUEBA ESTO!</h1>
-                <div class="grillas_prueba_esto">
-                    <div class="receta_1">
 
-                    </div>
-                    <div class="descripcionR1">
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt iure quis reprehenderit id
-                            eaque repudiandae provident nemo doloribus corrupti, cupiditate dicta laboriosam architecto
-                            modi porro accusantium, quo esse soluta? Blanditiis!</p>
-
-                    </div>
-                    <div class="receta_2">
-
-                    </div>
-                    <div class="descripcionR2">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, eligendi. Enim expedita vel
-                            facere, aut eum exercitationem ut est cumque blanditiis, dolor veniam commodi! Repudiandae
-                            eius quaerat minus necessitatibus architecto.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="video_receta">
-                <h1>MI MEJOR RECETA</h1>
-
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2IOl1htRC5A"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
-
-           
-            <div class="sobre_mi">
-                <h1>Hola</h1>
-                <div class="grillas_sobre_mi">
-                    <div class="foto_de_perfil">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod provident ipsa quaerat
-                        similique incidunt consequatur, earum reiciendis explicabo magni at adipisci ullam accusantium
-                        quam minima! Fugit aperiam doloremque sapiente.
-                    </div>
-                    <div class="biografia_corta">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum expedita magnam, saepe rerum
-                        beatae odit aut dolorum ea dolores nemo voluptatem dolor? Quibusdam aperiam fugiat, est debitis
-                        expedita pariatur accusamus.
-                    </div>
-                </div>
-            </div> -->
-        </div>
-        </div>
-    </main>
-
-
-    <!--------------------------------- FOOTER ---------------------------------->
     <footer class="footer">
         <div class="grupo1">
             <div class="box1">
+                <figure>
+                    <a href="#">
+                        <img src="css-paginas_externas/IdealTrip.png" alt="">
+                    </a>
+                </figure>
             </div>
             <div class="box2">
-                <h2>Sobre Nosotros</h2>
+
+                <h2>SOBRE NOSOTROS</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, quidem?</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos, quidem?</p>
             </div>
             <div class="box3">
-                <h2>Siguenos</h2>
+                <h2>SIGUENOS</h2>
                 <div class="red-social">
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/cesar-mateo-cortes-leon-b823a2206"
-                                target="_blank">Linkedin</a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.instagram.com/cort_cesar_/?hl=es-la" target="_blank">Instagram</a>
-                        </li>
-                    </ul>
+                    <a href="https://www.instagram.com/cort_cesar_/?hl=es-la" target="_blank"
+                        class="fa fa-instagram"></a>
+                    <a href="https://github.com/cesarcortes-dep/Proyecto-CoderHouse.git" target="_blank"
+                        class="fa fa-github"></a>
+                    <a href="https://www.linkedin.com/in/cesar-mateo-cortes-leon-b823a2206 " target="_blank"
+                        class="fa fa-linkedin"></a>
 
                 </div>
             </div>
@@ -139,8 +189,8 @@
         <div class="grupo2">
             <small>&copy; 2022 <b>IdealTrip</b> - Todos los derechos reservados. </small>
         </div>
-
     </footer>
+    </div>
 </body>
 
 </html>
