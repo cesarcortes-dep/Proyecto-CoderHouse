@@ -1,540 +1,632 @@
 html {
+  margin: 0;
+  padding: 0;
   font-size: 62, 5%;
-  font-family: "Roboto Serif", serif;
 }
 .body {
-  height: auto;
-  background-color: transparent;
-  font-size: 1rem;
-  line-height: 1.6rem;
-  margin: 0;
+  font-family: "Roboto Serif", serif;
+  background-color: FBFAFF;
+  background-color: #5184a4;
 }
 
-/*-------------SECCION HEADER(NO NECESITA CAMBIO)-------------*/
-/* .mostrar_menu,
-.esconder_menu {
-  font-size: 30px;
-  cursor: pointer;
-  display: none;
-  transition: 0.4s;
-}
-.mostrar_menu {
-  order: 1;
-}
-
-#check {
-  display: none;
-}
- */
-/* ----------SECCION HEADER---------- */
-.header {
-  background-color: #4a4e69;
-  padding: 0;
-  position: fixed;
-  width: 100%;
-  left: 0;
-  top: 0;
+.navbar-light {
+  background-color: #5184a4;
 }
 
 .header a {
   font-weight: bold;
-  color: #04030f;
   text-decoration: none;
-  padding: 8px 0;
+  margin: 25px;
 }
-
 .header .navegador {
-  background-color: transparent;
+  margin-bottom: 100px;
+  padding: 10px;
   text-align: center;
-  padding: 37px 0;
-}
-
-/*-------------SECCION NAVEGADOR-------------*/
-.navegador {
-  border: #a16523 5px solid;
-  border-radius: 1.5px;
-  background-image: url(IdealTrip.png);
-  background-size: 250px;
-  background-repeat: no-repeat;
-  background-position: top left;
 }
 
 .navegador li {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: inline-block;
+  background-color: #a16523;
   font-size: 25px;
-  padding: 10px;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.navegador ul {
+  padding-left: 0;
+}
+.navegador {
+  grid-area: header;
+  border-top: #b02e0c 5px solid;
+  border-bottom: #b02e0c 5px solid;
+  margin-top: 0;
+  text-align: left;
+  background-color: #5184a4;
 }
 
-.navegador li a:hover {
-  background: #a16523;
-  transition: all 0.3s linear;
-  border-radius: 5px;
-  border: 1px 1px;
+.logo {
+  display: block;
+  text-align: center;
+  margin: auto;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;
+  border-radius: 13px;
+  border: 3px solid #b02e0c;
 }
-
-/*-------------SECCION MAIN------------*/
-.main {
-  padding-top: 5rem;
-  margin: 50px 0;
-  background-color: transparent;
+.logo img {
+  width: 100%;
+  height: 100%;
 }
-
 .grillas {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 450px 550px 450px 340px;
+  grid-template-rows: 680px 670px 550px 350px;
+  grid-template-columns: 2fr;
   grid-template-areas:
-    "contenido_principal"
-    "prueba_esto "
-    "video_de_receta"
-    "sobre_mi ";
-  /* grid-column-gap: 10px;
-  grid-row-gap: 15px; */
+    "contenido-principal"
+    "prueba-esto"
+    "video-receta"
+    "sobre-mi";
 }
 
-/*-------------CONTENIDO PRINCIPAL------------*/
-.contenido_principal {
-  background-color: #2b2d42 /* #48BFE3 */;
-  padding: 20px;
-  grid-area: contenido_principal;
+/* ------------CONTENIDO PRINCIPAL------------ */
+.contenido-principal {
+  grid-area: contenido-principal;
   display: grid;
   grid-template-areas: "galeria descripcion ";
-  grid-template-columns: 35% 50%;
+  grid-template-columns: 25% 60%;
   text-align: center;
   grid-column-gap: 3px;
   grid-row-gap: 15px;
   align-items: center;
   justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 190px;
+  background-color: #c1bfb5;
 }
 
-.galeria:hover {
-  background-color: #ad2e24;
-  transition: 0.6s;
+.contenido-principal h1 {
+  margin-top: 10px;
+  text-align: center;
+  color: red;
 }
-.galeria:not(:hover) {
-  background-color: #edfdfb;
-  transition: 0.6s;
-}
+
 .galeria {
+  background-color: red;
+  display: flex;
   grid-area: galeria;
-  background-color: #edfdfb;
-  background-position: center;
-  height: 100%;
-  background-image: url(BannerBMS.png);
-  background-repeat: no-repeat;
-  background-size: 366px;
-}
-.titulo_descripcion {
-  font-size: small;
+  display: block;
+  margin-bottom: 10px;
   text-align: center;
 }
-.titulo_parrafo {
-  margin: 30px;
-  text-align: left;
+
+.galeria img {
+  margin: auto;
+  width: 60%;
+  height: 80%;
+  text-align: center;
+  border-radius: 13px;
+  border: 3px solid gray;
 }
-.titulo_parrafo a {
-  color: red;
+
+.descripcion {
+  margin: auto;
+  grid-area: descripcion;
+  height: 80%;
+  text-decoration: none;
+  text-align: center;
+}
+.descripcion a {
   text-decoration: none;
 }
-
-.titulo_parrafo a:hover {
-  background: #ffffff;
-  transition: all 0.3s linear;
-  border-radius: 3px;
-  border: 1px 1px;
-}
-.parrafo_descripcion {
-  margin: 30px;
-  font-size: 16px;
-  text-align: center;
-}
-.costo {
-  margin: 30px;
-  text-align: left;
-  color: red;
-}
-.descripcion {
-  border: 5px solid #a16523;
-  font-size: 15px;
-  height: 80%;
-  grid-area: descripcion;
-  text-align: center;
-  background-color: #4a4e69;
-}
-
-/*-------------CONTENIDO PRINCIPAL------------*/
-
-/* -------------------------PRUEBA ESTO------------------------------ */
-/* MOUSE IN */
-.prueba_esto:hover {
-  background-color: #edfdfb;
-  transition: 0.6s;
-}
-/* MOUSE OUT */
-.prueba_esto:not(:hover) {
-  background-color: #d6a24c;
-  transition: 0.6s;
-}
-
-.boton1 {
-  display: inline-block;
-  font-family: "Roboto Serif", serif;
-  font-weight: 500;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 50px;
+.costo h2 {
   font-size: 20px;
-  background-color: #141414;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s ease all;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
 }
-.boton1 span {
-  position: relative;
-  z-index: 2;
-  transition: 0.3 ease all;
-}
-.boton1::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  z-index: 1;
-  top: -50px;
-  left: 0;
-  transition: 0.3s ease-in-out;
-}
-.boton1:hover::after {
-  top: 0;
-}
-/* -------------------------- */
-.boton2 {
-  display: inline-block;
-  font-family: "Roboto Serif", serif;
-  font-weight: 500;
-  align-items: center;
-  justify-content: center;
-  width: 100px;
-  height: 50px;
-  font-size: 20px;
-  background-color: #141414;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s ease all;
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
-}
-.boton2 span {
-  position: relative;
-  z-index: 2;
-  transition: 0.3 ease all;
-}
-.boton2::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background-color: red;
-  position: absolute;
-  z-index: 1;
-  top: -50px;
-  left: 0;
-  transition: 0.3s ease-in-out;
-}
-.boton2:hover::after {
-  top: 0;
-}
+/* ------------CONTENIDO PRINCIPAL------------ */
 
-.prueba_esto {
+/*--------------------------------------*/
+
+/* ------------PRUEBA ESTO------------ */
+.prueba-esto {
   display: flex;
   text-align: center;
-  grid-area: prueba_esto;
+  grid-area: prueba-esto;
+  text-align: center;
+  padding: 50px;
+  margin: auto;
   background-color: #d6a24c;
   padding: 50px;
   flex-direction: column;
   align-content: center;
 }
-.grillas_prueba_esto {
+.prueba-esto h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.grillas-prueba-esto {
+  justify-content: center;
   display: grid;
-  grid-template-areas: "receta_1 descripcionR1 receta_2 descripcionR2";
-  grid-template-columns: 30% 20% 30% 20%;
+  grid-template-areas:
+    "receta-1 descripcion-1"
+    "receta-2 descripcion-2";
+  grid-template-columns: repeat(2, 10fr);
   height: 100%;
   grid-column-gap: 10px;
   grid-row-gap: 15px;
   background-color: transparent;
 }
-.receta_1 {
-  grid-area: receta_1;
-  background-image: url(Enpanadas.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #4a4e69;
+
+.receta-1 {
+  grid-area: receta-1;
+  padding: 0;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin: auto;
 }
-.descripcionR1 {
-  /* display: none; */
-  grid-area: descripcionR1;
-  background-color: #4a4e69;
+.receta-1 img {
+  text-align: center;
+  margin: auto;
+  padding-right: 0;
+  margin-bottom: 10px;
+  border-radius: 13px;
+  border: 3px solid red;
+  width: 50%;
+  height: 50%;
+}
+.descripcion-1 {
+  grid-area: descripcion-1;
+  margin-left: 0;
+  background-color: aquamarine;
+  text-align: center;
 }
 
-.receta_2 {
-  grid-area: receta_2;
-  background-image: url(Picada.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-color: #4a4e69;
+.receta-2 {
+  grid-area: receta-2;
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.receta-2 img {
+  margin-bottom: 10px;
+  border-radius: 13px;
+  border: 3px solid red;
+  width: 50%;
+  height: 100%;
 }
 
-.descripcionR2 {
-  /* display: none; */
-  grid-area: descripcionR2;
-  background-color: #4a4e69;
+.descripcion-2 {
+  grid-area: descripcion-2;
+  margin-left: 0;
+  text-align: center;
+  background-color: lightcoral;
 }
+/* ------------PRUEBA ESTO------------ */
 
-/* -------------------------VIDEO RECETA RECETA------------------------------ */
+/*--------------------------------------*/
 
-.video_receta {
+/* ------------VIDEO RECETA------------ */
+
+.video-receta {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  grid-area: video_de_receta;
-  background-color: #2b2d42;
-  padding: 20px;
+  grid-area: video-receta;
+  margin: auto;
   align-content: space-around;
   align-items: center;
 }
-.video_receta h1 {
+.video-receta h1 {
   text-align: center;
 }
+/* ------------VIDEO RECETA------------ */
 
-/* ------------------------SOBRE MI------------------------------- */
+/*--------------------------------------*/
 
-.sobre_mi {
-  grid-area: sobre_mi;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-content: stretch;
-  align-items: center;
-  flex-wrap: wrap;
+/* ------------SOBRE MI------------ */
 
-  padding: 20px;
-  text-align: center;
-  background-color: #d6a24c;
-}
-
-.grillas_sobre_mi {
-  align-items: center;
-  text-align: center;
-  justify-content: center;
+.sobre-mi {
   display: grid;
-  grid-template-areas: "foto_de_perfil biografia_corta";
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 10px;
-}
-.foto_de_perfil {
-  height: 230px;
-  background-image: url(https://placedog.net/420);
-  background-repeat: no-repeat;
-  background-size: 20%;
-  background-position: center;
-  background-color: azure;
-  grid-area: foto_de_perfil;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "foto-de-perfil bigrafia-corta";
+  grid-area: sobre-mi;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: lightgreen;
 }
 
-.biografia_corta {
-  background-color: blanchedalmond;
-  grid-area: biografia_corta;
+.foto-de-perfil {
+  grid-area: foto-de-perfil;
+  display: block;
+  text-align: center;
+  margin: 15px 10px 15px 10px;
+}
+.foto-de-perfil img {
+  width: 400px;
+  height: 250px;
+}
+.biografia-corta {
+  grid-area: bigrafia-corta;
+  margin: auto 15px;
+  background-color: lightskyblue;
 }
 
-/* --------------------------FOOTER----------------------------- */
+/* ------------SOBRE MI------------ */
+
+/*--------------------------------------*/
+
+/* ------------FOOTER------------ */
 
 .footer {
-  color: #48bfe3;
-  background-image: url(IdealTripLogo.png);
-  background-repeat: no-repeat;
-  background-size: 120px;
-  background-position: 2% 10%;
-  background-color: #edfdfb;
-  border: #ffffff 3px solid;
-  border-radius: 5px;
-  border: 1px 1px;
   width: 100%;
-  height: 200px;
+  background-color: lightsteelblue;
+  line-height: 1.6;
+  text-decoration: none;
 }
-
 .footer .grupo1 {
-  display: flex;
   width: 100%;
   max-width: 1200px;
-  margin: 0px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0;
+}
+
+.footer .grupo1 .box1 figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-/* -------------RESPONSIVE ANDROID-------------------*/
+.footer .grupo1 .box1 figure img {
+  width: 250px;
+}
 
+.footer .grupo1 .box2 h2 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo1 .box3 h2 {
+  color: red;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.footer .grupo1 .box2 p {
+  color: black;
+  margin-bottom: 10px;
+}
+.footer .grupo1 .red-social a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: black;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transform: all 300ms ease;
+}
+.footer .grupo1 .red-social a:hover {
+  color: red;
+}
+
+.footer .grupo2 {
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.footer {
+  grid-area: footer;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+  background-color: lightsteelblue;
+}
+
+.box3 ul {
+  padding-left: 0;
+}
+.box3 li {
+  list-style: none;
+}
+.box3 a {
+  text-decoration: none;
+}
+/* ------------FOOTER------------ */
+
+/* -------------------------------MEDIA QUERY---------------------------------------- */
 @media screen and (max-width: 425px) {
-  .header .navegador {
-    background-position: bottom center;
-    background-size: 50px;
-    padding: 42px 0px;
+  .navbar {
+    position: fixed;
   }
-  .video_receta {
-    width: 113%;
-  }
-  .sobre_mi {
-    width: 113%;
-  }
-  .grillas {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 510px 700px 450px 340px;
-    grid-template-areas:
-      "contenido_principal"
-      "prueba_esto "
-      "video_de_receta"
-      "sobre_mi ";
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-  }
-
-  .grillas_prueba_esto {
-    display: grid;
-    grid-template-areas:
-      "receta_1 descripcionR1"
-      "receta_2 descripcionR2";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
-    grid-row-gap: 15px;
-    background-color: transparent;
-  }
-  .grillas_sobre_mi {
-    padding: 1px;
-    text-align: center;
-    display: grid;
-    grid-template-areas: "foto_de_perfil biografia_corta";
-    grid-template-columns: 50% 50%;
-    grid-column-gap: 10px;
-  }
-
-  .prueba_esto {
+  .header {
+    padding: 0;
     width: 100%;
-    padding: 50px;
-    align-content: center;
+    left: 0;
+    top: 0;
   }
-
-  .navegadorLista ul {
-    text-align: center;
+  .header a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
   }
-  .navegadorLista a {
-    font-size: 15px;
-    display: inline-block;
-    padding: 3px;
+  .header .navegador {
+    padding: 5px;
+    text-align: left;
   }
-  .grupo1 {
-    background-size: 50px;
+  .navegador li {
+    font-size: 25px;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
   }
-  .box2 {
-    font-size: 7px;
-    background-size: 50px;
-  }
-
-  .box3 {
-    font-size: 7px;
-    background-size: 50px;
-  }
-  .footer {
-    padding: 46px;
-    font-size: 7px;
-    background-image: url(IdealTripLogo.png);
-    background-repeat: no-repeat;
-    background-size: 50px;
-    background-position: 3% 20%;
-    background-color: #7400b8;
-    border: #ffffff 3px solid;
-    border-radius: 5px;
-    border: 1px 1px;
-  }
-
-  .footer .grupo1 {
-    background-size: 50px;
-    justify-content: center;
-  }
-}
-
-/* RESPONSIVE TABLET*/
-@media screen and (max-width: 780px) {
-  .contenido_principal {
-    padding: 20px;
-    flex-direction: row;
-  }
-
-  .prueba_esto {
-    padding: 50px;
-    align-content: center;
+  .navegador ul {
+    padding-left: 0;
   }
   .navegador {
-    background-position: top left;
-    background-image: url(IdealTripLogo.png);
-    background-size: 100px;
+    border: #a16523 5px solid;
+    margin-top: 0;
+    text-align: left;
+    background-color: beige;
   }
-  .navegadorLista ul {
+
+  .logo {
+    display: block;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 13px;
+    border: 3px solid gray;
+  }
+  .logo img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .grillas {
+    display: grid;
+    grid-template-rows: 850px 950px 350px 350px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contenido-principal"
+      "prueba-esto"
+      "video-receta"
+      "sobre-mi";
+  }
+
+  /* ------------CONTENIDO PRINCIPAL------------ */
+  .contenido-principal h1 {
+    text-align: center;
+    color: red;
+  }
+  .contenido-principal {
+    display: block;
+    text-align: center;
+    grid-column-gap: 3px;
+    grid-row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 190px;
+    background-color: aqua;
+    margin-bottom: 0px;
+    margin-top: 100px;
+    background-color: aqua;
+  }
+  .galeria {
+    display: block;
+    margin-bottom: 10px;
     text-align: center;
   }
-  .navegadorLista a {
-    font-size: 15px;
-    display: inline-block;
-    padding: 3px;
+  .galeria h1 {
+    text-align: center;
+    color: blue;
   }
-  .footer {
-    font-size: 11.5px;
-    background-image: url(IdealTripLogo.png);
-    background-repeat: no-repeat;
-    background-size: 100px;
-    background-position: 3% 20%;
-    background-color: #7400b8;
-    border: #ffffff 3px solid;
-    border-radius: 5px;
-    border: 1px 1px;
+  .galeria img {
+    margin-top: 10px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    border-radius: 13px;
+    border: 3px solid gray;
   }
+
+  .descripcion {
+    margin-top: 10px;
+    height: 55%;
+    text-decoration: none;
+    text-align: center;
+    background-color: coral;
+  }
+  .descripcion a {
+    text-decoration: none;
+  }
+  .costo h2 {
+    font-size: 20px;
+  }
+  /* ------------CONTENIDO PRINCIPAL------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------PRUEBA ESTO------------ */
+  .prueba-esto {
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .prueba-esto h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .receta-1 {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .receta-1 img {
+    margin: auto;
+    border-radius: 13px;
+    border: 3px solid red;
+    width: 150px;
+    height: 150px;
+  }
+  .descripcion-1 {
+    background-color: aquamarine;
+    text-align: center;
+  }
+
+  .receta-2 {
+    display: block;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 0;
+  }
+  .receta-2 img {
+    margin-bottom: 10px;
+    border-radius: 13px;
+    border: 3px solid red;
+    width: 150px;
+    height: 150px;
+  }
+
+  .descripcion-2 {
+    text-align: center;
+    background-color: lightcoral;
+  }
+  /* ------------PRUEBA ESTO------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------VIDEO RECETA------------ */
+
+  .video-receta {
+    padding: 0;
+    display: block;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    margin-top: 30px;
+    border-radius: 13px;
+    border: 3px solid gray;
+  }
+
+  .video-receta iframe {
+    width: 100%;
+    height: 250px;
+  }
+  /* ------------VIDEO RECETA------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------SOBRE MI------------ */
+
+  .sobre-mi {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: lightgreen;
+  }
+  .foto-de-perfil {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+  .foto-de-perfil img {
+    margin: auto 5px 0;
+    width: 100%;
+    height: 100%;
+  }
+  .biografia-corta {
+    margin: auto 8px;
+    background-color: lightskyblue;
+  }
+
+  /* ------------SOBRE MI------------ */
+
+  /*--------------------------------------*/
+
+  /* ------------FOOTER------------ */
 
   .footer .grupo1 {
-    justify-content: center;
+    width: 100%;
+
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0;
   }
 
-  /* .mostrar_menu,
-.esconder_menu{
-  display: block;
-} */
-  /* .navegadorLista {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    right: -90%;
-    top: 0;
-    text-align: center;
-    padding: 100px 0px;
-    z-index: 100;
-    transition: 0.8s;
-  } */
+  .footer p {
+    padding: 3px 15px;
+    display: block;
+  }
 
-  /* .esconder_menu{
-  position: absolute;
-  top:40px;
-  right: 40px;
+  .footer hr {
+    height: 1px;
+    background-color: black;
+  }
+  .box3 ul {
+    padding-left: 0;
+  }
+  .box3 li {
+    list-style: none;
+  }
+  .box3 a {
+    text-decoration: none;
+  }
+
+  /* ------------FOOTER------------ */
 }
-#check:checked ~ .navegadorLista{
-  right: 10;
+
+/* @media screen and (max-width: 806px) {
+  .grillas {
+    display: grid;
+    grid-template-rows: 470px 670px 550px 350px;
+    grid-template-columns: 2fr;
+    grid-template-areas:
+      "contenido-principal"
+      "prueba-esto"
+      "video-receta"
+      "sobre-mi";
+  }
+
+
+  .contenido-principal {
+    grid-area: contenido-principal;
+    display: grid;
+    grid-template-areas: "galeria descripcion ";
+    grid-template-columns: 40% 60%;
+    text-align: center;
+    grid-column-gap: 3px;
+    grid-row-gap: 15px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 190px;
+    background-color: #c1bfb5;
+}
+
+
+
+.sobre-mi {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "foto-de-perfil bigrafia-corta";
+ 
 } */
-}
+
+
