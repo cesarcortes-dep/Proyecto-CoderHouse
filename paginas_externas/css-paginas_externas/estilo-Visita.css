@@ -6,20 +6,35 @@ html {
 .body {
   font-family: "Roboto Serif", sans-serif;
   overflow-x: hidden;
-  background-color: lightblue ;
- 
+  background-color: lightblue;
 }
 /* 
 <!-- ================================================= -->
 <!-- ENCABEZADO -->
 <!-- ================================================= --> */
 
+#iconos-encabezado i {
+  font-size: 26px;
+  padding: 0 8px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
 
+#iconos-encabezado i:hover {
+  background-color: #f4978e;
+
+}
 #menu a {
   font-size: 16px;
   font-weight: bold;
-  color: #DC3445;
+  color: #dc3445;
+  background-color: transparent;
+  transition: background-color 0.5s;
 }
+#menu a:hover {
+  background-color: #f4978e;
+}
+
 
 #menu .navbar-toggler {
   transition: none;
@@ -35,11 +50,11 @@ html {
 <!-- ================================================= -->
  */
 
-#los-mejores-de-medellin a:hover{
-  transition: .5s;
-background-color: lightblue;
+#los-mejores-de-medellin a:hover {
+  transition: 0.5s;
+  background-color: lightblue;
 }
-#te-puede-interesar{
+#te-puede-interesar {
   background-color: #edf6f9;
 }
 
@@ -49,38 +64,36 @@ background-color: lightblue;
 <!-- ================================================= -->
  */
 
- #cards{
+#cards {
   background-color: #edf6f9;
   padding-bottom: 10px;
- }
- #card-1 {
+}
+#card-1 {
   background-color: powderblue;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 #card-1:hover {
-  background-color: #D95252;
+  background-color: #d95252;
 }
 
 #card-2 {
   background-color: powderblue;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 #card-2:hover {
-  background-color: #D97EB0;
+  background-color: #d97eb0;
 }
 
 #card-3 {
   background-color: powderblue;
-  transition: background-color .5s;
+  transition: background-color 0.5s;
 }
 
 #card-3:hover {
-  background-color: #73A9D9;
+  background-color: #73a9d9;
 }
-
-
 
 /* 
 <!-- ================================================= -->
@@ -91,30 +104,26 @@ background-color: lightblue;
   background-color: aliceblue;
 }
 
-
 /* 
 <!-- ================================================= -->
 <!-- FOOTER-->
 <!-- ================================================= -->
  */
-footer{
+footer {
   background: #dc3545;
   min-width: 100px;
-
 }
 
-footer p{
+footer p {
   color: #f3f3f3;
   text-align: center;
 }
 
 #iconos i {
-font-size: 26px;
-padding: 0 8px;
-color: #f3f3f3;
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
 }
-
-
 
 /* 
 <!-- ================================================= -->
@@ -151,7 +160,7 @@ color: #f3f3f3;
   #sobre-mi-foto {
     margin-top: 2px;
   }
-  #te-puede-interesar{
+  #te-puede-interesar {
     width: 90% !important;
   }
   #prueba-esto-titulo {
@@ -162,9 +171,8 @@ color: #f3f3f3;
     text-align: center;
   }
 
-  #bg-footer{
+  #bg-footer {
     top: -82px;
- 
   }
 }
 
@@ -180,10 +188,8 @@ color: #f3f3f3;
     justify-content: center !important;
   }
 
-
   iframe {
     width: 320px;
     height: 250px;
   }
-  
 }
