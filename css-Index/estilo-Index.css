@@ -4,629 +4,205 @@ html {
   font-size: 62, 5%;
 }
 .body {
-  font-family: "Roboto Serif", serif;
-  background-color: FBFAFF;
-  background-color: #5184a4;
+  font-family: "Roboto Serif", sans-serif;
+  overflow-x: hidden;
+  background-color: lightblue ;
+ 
 }
+/* 
+<!-- ================================================= -->
+<!-- ENCABEZADO -->
+<!-- ================================================= --> */
 
-.navbar-light {
-  background-color: #5184a4;
-}
 
-.header a {
+#menu a {
+  font-size: 16px;
   font-weight: bold;
-  text-decoration: none;
-  margin: 25px;
-}
-.header .navegador {
-  margin-bottom: 100px;
-  padding: 10px;
-  text-align: center;
+  color: #DC3445;
 }
 
-.navegador li {
-  background-color: #a16523;
-  font-size: 25px;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
+#menu .navbar-toggler {
+  transition: none;
 }
-.navegador ul {
-  padding-left: 0;
-}
-.navegador {
-  grid-area: header;
-  border-top: #b02e0c 5px solid;
-  border-bottom: #b02e0c 5px solid;
-  margin-top: 0;
-  text-align: left;
-  background-color: #5184a4;
+#menu button {
+  font-size: 15px;
+  font-weight: bold;
 }
 
-.logo {
-  display: block;
-  text-align: center;
+/* 
+<!-- ================================================= -->
+<!-- SLIDER DE IMAGENES -->
+<!-- ================================================= -->
+ */
+#carousel{
+  background-color: #6c757d;
+}
+
+.carousel-inner {
+  margin-top: 100px;
   margin: auto;
-  overflow: hidden;
-  width: 80px;
-  height: 80px;
-  border-radius: 13px;
-  border: 3px solid #b02e0c;
-}
-.logo img {
-  width: 100%;
-  height: 100%;
-}
-.grillas {
-  display: grid;
-  grid-template-rows: 680px 670px 550px 350px;
-  grid-template-columns: 2fr;
-  grid-template-areas:
-    "contenido-principal"
-    "prueba-esto"
-    "video-receta"
-    "sobre-mi";
+  max-height: 39rem;
+  max-width: 39rem;
 }
 
-/* ------------CONTENIDO PRINCIPAL------------ */
-.contenido-principal {
-  grid-area: contenido-principal;
-  display: grid;
-  grid-template-areas: "galeria descripcion ";
-  grid-template-columns: 25% 60%;
-  text-align: center;
-  grid-column-gap: 3px;
-  grid-row-gap: 15px;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 190px;
-  background-color: #c1bfb5;
-}
+/* 
+<!-- ================================================= -->
+<!-- INTRO-->
+<!-- ================================================= -->
+ */
 
-.contenido-principal h1 {
-  margin-top: 10px;
-  text-align: center;
-  color: red;
+#los-mejores-de-medellin a:hover{
+  transition: .5s;
+background-color: lightcyan;
 }
-
-.galeria {
-  background-color: red;
-  display: flex;
-  grid-area: galeria;
-  display: block;
-  margin-bottom: 10px;
-  text-align: center;
+#te-puede-interesar{
+  background-color: #edf6f9;
 }
-
-.galeria img {
-  margin: auto;
-  width: 60%;
-  height: 80%;
-  text-align: center;
-  border-radius: 13px;
-  border: 3px solid gray;
-}
-
-.descripcion {
-  margin: auto;
-  grid-area: descripcion;
-  height: 80%;
-  text-decoration: none;
-  text-align: center;
-}
-.descripcion a {
-  text-decoration: none;
-}
-.costo h2 {
-  font-size: 20px;
-}
-/* ------------CONTENIDO PRINCIPAL------------ */
-
-/*--------------------------------------*/
-
-/* ------------PRUEBA ESTO------------ */
-.prueba-esto {
-  display: flex;
-  text-align: center;
-  grid-area: prueba-esto;
-  text-align: center;
-  padding: 50px;
-  margin: auto;
-  background-color: #d6a24c;
-  padding: 50px;
-  flex-direction: column;
-  align-content: center;
-}
-.prueba-esto h1 {
-  text-align: center;
-  font-size: 30px;
-}
-
-.grillas-prueba-esto {
-  justify-content: center;
-  display: grid;
-  grid-template-areas:
-    "receta-1 descripcion-1"
-    "receta-2 descripcion-2";
-  grid-template-columns: repeat(2, 10fr);
-  height: 100%;
-  grid-column-gap: 10px;
-  grid-row-gap: 15px;
-  background-color: transparent;
-}
-
-.receta-1 {
-  grid-area: receta-1;
-  padding: 0;
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  margin: auto;
-}
-.receta-1 img {
-  text-align: center;
-  margin: auto;
-  padding-right: 0;
-  margin-bottom: 10px;
-  border-radius: 13px;
-  border: 3px solid red;
-  width: 50%;
-  height: 50%;
-}
-.descripcion-1 {
-  grid-area: descripcion-1;
-  margin-left: 0;
-  background-color: aquamarine;
-  text-align: center;
-}
-
-.receta-2 {
-  grid-area: receta-2;
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-.receta-2 img {
-  margin-bottom: 10px;
-  border-radius: 13px;
-  border: 3px solid red;
-  width: 50%;
-  height: 100%;
-}
-
-.descripcion-2 {
-  grid-area: descripcion-2;
-  margin-left: 0;
-  text-align: center;
+/* 
+<!-- ================================================= -->
+<!-- PRUEBA ESTO-->
+<!-- ================================================= -->
+ */
+#prueba-esto-titulo{
   background-color: lightcoral;
 }
-/* ------------PRUEBA ESTO------------ */
 
-/*--------------------------------------*/
-
-/* ------------VIDEO RECETA------------ */
-
-.video-receta {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  grid-area: video-receta;
-  margin: auto;
-  align-content: space-around;
-  align-items: center;
+#prueba-esto{
+  background-color: lightcoral;
 }
-.video-receta h1 {
-  text-align: center;
-}
-/* ------------VIDEO RECETA------------ */
+/* 
+<!-- ================================================= -->
+<!-- VIDEO RECETA-->
+<!-- ================================================= -->
+ */
 
-/*--------------------------------------*/
-
-/* ------------SOBRE MI------------ */
-
-.sobre-mi {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "foto-de-perfil bigrafia-corta";
-  grid-area: sobre-mi;
-  text-align: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: lightgreen;
-}
-
-.foto-de-perfil {
-  grid-area: foto-de-perfil;
-  display: block;
-  text-align: center;
-  margin: 15px 10px 15px 10px;
-}
-.foto-de-perfil img {
-  width: 400px;
-  height: 250px;
-}
-.biografia-corta {
-  grid-area: bigrafia-corta;
-  margin: auto 15px;
-  background-color: lightskyblue;
-}
-
-/* ------------SOBRE MI------------ */
-
-/*--------------------------------------*/
-
-/* ------------FOOTER------------ */
-
-.footer {
+ #video {
+  background-clip: url(https://www.youtube.com/watch?v=2IOl1htRC5A);
+  background-color: darkseagreen;
   width: 100%;
-  background-color: lightsteelblue;
-  line-height: 1.6;
-  text-decoration: none;
-}
-.footer .grupo1 {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-  padding: 45px 0;
+  height: 500px;
 }
 
-.footer .grupo1 .box1 figure {
-  width: 100%;
-  height: 100%;
+iframe {
+  width: 700px;
+  height: 500px;
+}
+
+.video {
+  background-color: lightblue;
+  padding-bottom: 5px;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.footer .grupo1 .box1 figure img {
-  width: 250px;
+.wrapper {
+  width: 50%;
+  margin-left: 100px;
+  padding-top: 150px;
 }
 
-.footer .grupo1 .box2 h2 {
-  color: red;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.footer .grupo1 .box3 h2 {
-  color: red;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-.footer .grupo1 .box2 p {
-  color: black;
-  margin-bottom: 10px;
-}
-.footer .grupo1 .red-social a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: black;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transform: all 300ms ease;
-}
-.footer .grupo1 .red-social a:hover {
-  color: red;
+/* 
+<!-- ================================================= -->
+<!-- SOBRE MI-->
+<!-- ================================================= -->
+ */
+#sobre-mi {
+  background-color: aliceblue;
 }
 
-.footer .grupo2 {
-  padding: 15px 10px;
+
+/* 
+<!-- ================================================= -->
+<!-- FOOTER-->
+<!-- ================================================= -->
+ */
+footer{
+  background: #dc3545;
+  min-width: 100px;
+
+}
+
+footer p{
+  color: #f3f3f3;
   text-align: center;
 }
 
-.footer {
-  grid-area: footer;
-  margin: 0;
-  text-align: center;
-  text-decoration: none;
-  background-color: lightsteelblue;
+#iconos i {
+font-size: 26px;
+padding: 0 8px;
+color: #f3f3f3;
 }
 
-.box3 ul {
-  padding-left: 0;
-}
-.box3 li {
-  list-style: none;
-}
-.box3 a {
-  text-decoration: none;
-}
-/* ------------FOOTER------------ */
 
-/* -------------------------------MEDIA QUERY---------------------------------------- */
-@media screen and (max-width: 425px) {
-  .navbar {
-    position: fixed;
-  }
-  .header {
-    padding: 0;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-  .header a {
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 5px;
-  }
-  .header .navegador {
-    padding: 5px;
-    text-align: left;
-  }
-  .navegador li {
-    font-size: 25px;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-  }
-  .navegador ul {
-    padding-left: 0;
-  }
-  .navegador {
-    border: #a16523 5px solid;
-    margin-top: 0;
-    text-align: left;
-    background-color: beige;
+
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES LG-->
+<!-- ================================================= -->
+ */
+
+@media (max-width: 1200px) {
+  .video {
+    flex-wrap: wrap;
+    padding-top: 30px;
   }
 
-  .logo {
-    display: block;
-    text-align: center;
+  .wrapper {
+    width: 90%;
     margin: auto;
-    overflow: hidden;
-    width: 80px;
-    height: 80px;
-    border-radius: 13px;
-    border: 3px solid gray;
+    padding-top: 50px;
   }
-  .logo img {
-    width: 100%;
-    height: 100%;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES SM-->
+<!-- ================================================= -->
+ */
+@media (max-width: 768px) {
+  #sobre-mi-texto p {
+    display: none;
+  }
+  #sobre-mi-texto {
+    margin-bottom: 1px;
   }
 
-  .grillas {
-    display: grid;
-    grid-template-rows: 850px 950px 350px 350px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "contenido-principal"
-      "prueba-esto"
-      "video-receta"
-      "sobre-mi";
+  #sobre-mi-foto {
+    margin-top: 2px;
   }
-
-  /* ------------CONTENIDO PRINCIPAL------------ */
-  .contenido-principal h1 {
-    text-align: center;
-    color: red;
+  #te-puede-interesar{
+    width: 90% !important;
   }
-  .contenido-principal {
-    display: block;
-    text-align: center;
-    grid-column-gap: 3px;
-    grid-row-gap: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0;
-    margin-top: 190px;
-    background-color: aqua;
-    margin-bottom: 0px;
-    margin-top: 100px;
-    background-color: aqua;
+  #prueba-esto-titulo {
+    width: 90% !important;
   }
-  .galeria {
-    display: block;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  .galeria h1 {
-    text-align: center;
-    color: blue;
-  }
-  .galeria img {
-    margin-top: 10px;
-    width: 50%;
-    height: 50%;
-    text-align: center;
-    border-radius: 13px;
-    border: 3px solid gray;
-  }
-
-  .descripcion {
-    margin-top: 10px;
-    height: 55%;
-    text-decoration: none;
-    text-align: center;
-    background-color: coral;
-  }
-  .descripcion a {
-    text-decoration: none;
-  }
-  .costo h2 {
-    font-size: 20px;
-  }
-  /* ------------CONTENIDO PRINCIPAL------------ */
-
-  /*--------------------------------------*/
-
-  /* ------------PRUEBA ESTO------------ */
-  .prueba-esto {
-    padding: 5px;
-    margin-top: 30px;
-    margin-bottom: 0;
-  }
-  .prueba-esto h1 {
-    text-align: center;
-    font-size: 30px;
-  }
-
-  .receta-1 {
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 0;
-  }
-  .receta-1 img {
-    margin: auto;
-    border-radius: 13px;
-    border: 3px solid red;
-    width: 150px;
-    height: 150px;
-  }
-  .descripcion-1 {
-    background-color: aquamarine;
+  .prueba-esto-fila {
+    width: 100% !important;
     text-align: center;
   }
 
-  .receta-2 {
-    display: block;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 0;
+  #bg-footer{
+    top: -82px;
+ 
   }
-  .receta-2 img {
-    margin-bottom: 10px;
-    border-radius: 13px;
-    border: 3px solid red;
-    width: 150px;
-    height: 150px;
-  }
+}
 
-  .descripcion-2 {
-    text-align: center;
-    background-color: lightcoral;
-  }
-  /* ------------PRUEBA ESTO------------ */
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES XSM-->
+<!-- ================================================= -->
+ */
 
-  /*--------------------------------------*/
-
-  /* ------------VIDEO RECETA------------ */
-
-  .video-receta {
-    padding: 0;
-    display: block;
-    text-align: center;
-    margin: 10px 10px 10px 10px;
-    margin-top: 30px;
-    border-radius: 13px;
-    border: 3px solid gray;
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
   }
 
-  .video-receta iframe {
-    width: 100%;
+
+  iframe {
+    width: 320px;
     height: 250px;
   }
-  /* ------------VIDEO RECETA------------ */
-
-  /*--------------------------------------*/
-
-  /* ------------SOBRE MI------------ */
-
-  .sobre-mi {
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: lightgreen;
-  }
-  .foto-de-perfil {
-    display: block;
-    text-align: center;
-    margin: auto;
-  }
-  .foto-de-perfil img {
-    margin: auto 5px 0;
-    width: 100%;
-    height: 100%;
-  }
-  .biografia-corta {
-    margin: auto 8px;
-    background-color: lightskyblue;
-  }
-
-  /* ------------SOBRE MI------------ */
-
-  /*--------------------------------------*/
-
-  /* ------------FOOTER------------ */
-
-  .footer .grupo1 {
-    width: 100%;
-
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0;
-  }
-
-  .footer p {
-    padding: 3px 15px;
-    display: block;
-  }
-
-  .footer hr {
-    height: 1px;
-    background-color: black;
-  }
-  .box3 ul {
-    padding-left: 0;
-  }
-  .box3 li {
-    list-style: none;
-  }
-  .box3 a {
-    text-decoration: none;
-  }
-
-  /* ------------FOOTER------------ */
+  
 }
-
-/* @media screen and (max-width: 806px) {
-  .grillas {
-    display: grid;
-    grid-template-rows: 470px 670px 550px 350px;
-    grid-template-columns: 2fr;
-    grid-template-areas:
-      "contenido-principal"
-      "prueba-esto"
-      "video-receta"
-      "sobre-mi";
-  }
-
-
-  .contenido-principal {
-    grid-area: contenido-principal;
-    display: grid;
-    grid-template-areas: "galeria descripcion ";
-    grid-template-columns: 40% 60%;
-    text-align: center;
-    grid-column-gap: 3px;
-    grid-row-gap: 15px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 190px;
-    background-color: #c1bfb5;
-}
-
-
-
-.sobre-mi {
-  display: grid;
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "foto-de-perfil bigrafia-corta";
- 
-} */
-
-
