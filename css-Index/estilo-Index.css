@@ -16,13 +16,25 @@ html {
 #iconos-encabezado i {
   font-size: 26px;
   padding: 0 8px;
+  background-color: transparent;
+  transition: background-color 0.5s;
 }
 
+#iconos-encabezado i:hover {
+  background-color: #f4978e;
+
+}
 #menu a {
   font-size: 16px;
   font-weight: bold;
-  color: #DC3445;
+  color: #dc3445;
+  background-color: transparent;
+  transition: background-color 0.5s;
 }
+#menu a:hover {
+  background-color: #f4978e;
+}
+
 
 #menu .navbar-toggler {
   transition: none;
@@ -31,7 +43,6 @@ html {
   font-size: 15px;
   font-weight: bold;
 }
-
 /* 
 <!-- ================================================= -->
 <!-- SLIDER DE IMAGENES -->
