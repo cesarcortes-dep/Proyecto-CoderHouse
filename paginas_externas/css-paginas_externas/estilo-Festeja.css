@@ -206,3 +206,198 @@ color: #f3f3f3;
   }
   
 }
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 62, 5%;
+}
+.body {
+  font-family: "Roboto Serif", sans-serif;
+  overflow-x: hidden;
+  background-color: lightblue;
+}
+/* 
+<!-- ================================================= -->
+<!-- ENCABEZADO -->
+<!-- ================================================= --> */
+
+#iconos-encabezado i {
+  font-size: 26px;
+  padding: 0 8px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+
+#iconos-encabezado i:hover {
+  background-color: #f4978e;
+
+}
+#menu a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #dc3445;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
+#menu a:hover {
+  background-color: #f4978e;
+}
+
+
+#menu .navbar-toggler {
+  transition: none;
+}
+#menu button {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- INTRODUCION-->
+<!-- ================================================= -->
+ */
+
+#los-mejores-de-medellin a:hover {
+  transition: 0.5s;
+  background-color: lightblue;
+}
+#te-puede-interesar {
+  background-color: #edf6f9;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- CARTAS DE PRESENTACION-->
+<!-- ================================================= -->
+ */
+
+#cards {
+  background-color: #edf6f9;
+  padding-bottom: 10px;
+}
+#card-1 {
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
+
+#card-1:hover {
+  background-color: #d95252;
+}
+
+#card-2 {
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
+
+#card-2:hover {
+  background-color: #d97eb0;
+}
+
+#card-3 {
+  background-color: powderblue;
+  transition: background-color 0.5s;
+}
+
+#card-3:hover {
+  background-color: #73a9d9;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- SOBRE MI-->
+<!-- ================================================= -->
+ */
+#sobre-mi {
+  background-color: aliceblue;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- FOOTER-->
+<!-- ================================================= -->
+ */
+footer {
+  background: #dc3545;
+  min-width: 100px;
+}
+
+footer p {
+  color: #f3f3f3;
+  text-align: center;
+}
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3;
+}
+
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES LG-->
+<!-- ================================================= -->
+ */
+
+@media (max-width: 1200px) {
+  .video {
+    flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin: auto;
+    padding-top: 50px;
+  }
+}
+
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES SM-->
+<!-- ================================================= -->
+ */
+@media (max-width: 768px) {
+  #sobre-mi-texto p {
+    display: none;
+  }
+  #sobre-mi-texto {
+    margin-bottom: 1px;
+  }
+
+  #sobre-mi-foto {
+    margin-top: 2px;
+  }
+  #te-puede-interesar {
+    width: 90% !important;
+  }
+  #prueba-esto-titulo {
+    width: 90% !important;
+  }
+  .prueba-esto-fila {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  #bg-footer {
+    top: -82px;
+  }
+}
+
+/* 
+<!-- ================================================= -->
+<!-- MEDIA QUERIES XSM-->
+<!-- ================================================= -->
+ */
+
+@media (max-width: 576px) {
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  iframe {
+    width: 320px;
+    height: 250px;
+  }
+}
