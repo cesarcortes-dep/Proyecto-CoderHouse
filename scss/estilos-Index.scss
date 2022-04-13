@@ -1,0 +1,221 @@
+@import "footer";
+
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 62, 5%;
+  }
+  .body {
+    font-family: "Roboto Serif", sans-serif;
+    overflow-x: hidden;
+    background-color: lightblue ;
+   
+  }
+  /* 
+  <!-- ================================================= -->
+  <!-- ENCABEZADO -->
+  <!-- ================================================= --> */
+  #iconos-encabezado  {
+   
+        i{
+            font-size: 26px;
+            padding: 0 8px;
+            background-color: transparent;
+            transition: background-color 0.5s;
+            &:hover{
+                background-color: #f4978e;
+            }
+
+            }
+  }
+  
+  #menu{
+    .navbar-toggler {
+        transition: none;
+  } 
+  button {
+    font-size: 15px;
+    font-weight: bold;
+  }
+    a {
+        font-size: 16px;
+        font-weight: bold;
+        color: #dc3445;
+        background-color: transparent;
+        transition: background-color 0.5s;
+        &:hover{
+            background-color: #f4978e;
+          }
+      }
+  } 
+
+  
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- SLIDER DE IMAGENES -->
+  <!-- ================================================= -->
+   */
+  #carousel{
+    background-color: #6c757d;
+  }
+  
+  .carousel-inner {
+    margin-top: 100px;
+    margin: auto;
+    max-height: 39rem;
+    max-width: 39rem;
+  }
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- INTRO-->
+  <!-- ================================================= -->
+   */
+  
+
+    #los-mejores-de-medellin
+    {
+        a{
+          transition: background-color 0.5s;
+        }&:hover{
+        background-color: lightcyan;
+        }
+    } 
+  #te-puede-interesar{
+    background-color: #edf6f9;
+  }
+  /* 
+  <!-- ================================================= -->
+  <!-- PRUEBA ESTO-->
+  <!-- ================================================= -->
+   */
+  #prueba-esto-titulo{
+    background-color: lightcoral;
+  }
+  
+  #prueba-esto{
+    background-color: lightcoral;
+  }
+  /* 
+  <!-- ================================================= -->
+  <!-- VIDEO RECETA-->
+  <!-- ================================================= -->
+   */
+  
+  .video {
+    background-color: lightblue;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+     
+   #video {
+    background-clip: url(https://www.youtube.com/watch?v=2IOl1htRC5A);
+    background-color: darkseagreen;
+    width: 100%;
+    height: 500px;
+  }
+  }
+  iframe {
+    width: 700px;
+    height: 500px;
+  }
+  
+  .wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+  }
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- SOBRE MI-->
+  <!-- ================================================= -->
+   */
+  #sobre-mi {
+    background-color: aliceblue;
+  }
+  
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- FOOTER-->
+  <!-- ================================================= -->
+   */
+
+  
+  
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES LG-->
+  <!-- ================================================= -->
+   */
+  
+  @media (max-width: 1200px) {
+    .video {
+      flex-wrap: wrap;
+      padding-top: 30px;
+    }
+  
+    .wrapper {
+      width: 90%;
+      margin: auto;
+      padding-top: 50px;
+    }
+  }
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES SM-->
+  <!-- ================================================= -->
+   */
+  @media (max-width: 768px) {
+    #sobre-mi-texto p {
+      display: none;
+    }
+    #sobre-mi-texto {
+      margin-bottom: 1px;
+    }
+  
+    #sobre-mi-foto {
+      margin-top: 2px;
+    }
+    #te-puede-interesar{
+      width: 90% !important;
+    }
+    #prueba-esto-titulo {
+      width: 90% !important;
+    }
+    .prueba-esto-fila {
+      width: 100% !important;
+      text-align: center;
+    }
+  
+    #bg-footer{
+      top: -82px;
+   
+    }
+  }
+  
+  /* 
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES XSM-->
+  <!-- ================================================= -->
+   */
+  
+  @media (max-width: 576px) {
+    .icono-wrap {
+      flex-wrap: wrap;
+      justify-content: center !important;
+    }
+  
+  
+    iframe {
+      width: 320px;
+      height: 250px;
+    }
+    
+  }
+  
+  

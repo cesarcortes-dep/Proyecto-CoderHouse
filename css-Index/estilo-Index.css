@@ -1,222 +1,175 @@
+footer {
+  background: #dc3545;
+  min-width: 100px; }
+  footer p {
+    color: #f3f3f3;
+    text-align: center; }
+
+#iconos i {
+  font-size: 26px;
+  padding: 0 8px;
+  color: #f3f3f3; }
+
 html {
   margin: 0;
   padding: 0;
-  font-size: 62, 5%;
-}
+  font-size: 62, 5%; }
+
 .body {
   font-family: "Roboto Serif", sans-serif;
   overflow-x: hidden;
-  background-color: lightblue ;
- 
-}
+  background-color: lightblue; }
+
 /* 
-<!-- ================================================= -->
-<!-- ENCABEZADO -->
-<!-- ================================================= --> */
+  <!-- ================================================= -->
+  <!-- ENCABEZADO -->
+  <!-- ================================================= --> */
 #iconos-encabezado i {
   font-size: 26px;
   padding: 0 8px;
   background-color: transparent;
-  transition: background-color 0.5s;
-}
+  transition: background-color 0.5s; }
+  #iconos-encabezado i:hover {
+    background-color: #f4978e; }
 
-#iconos-encabezado i:hover {
-  background-color: #f4978e;
+#menu .navbar-toggler {
+  transition: none; }
 
-}
+#menu button {
+  font-size: 15px;
+  font-weight: bold; }
+
 #menu a {
   font-size: 16px;
   font-weight: bold;
   color: #dc3445;
   background-color: transparent;
-  transition: background-color 0.5s;
-}
-#menu a:hover {
-  background-color: #f4978e;
-}
+  transition: background-color 0.5s; }
+  #menu a:hover {
+    background-color: #f4978e; }
 
-
-#menu .navbar-toggler {
-  transition: none;
-}
-#menu button {
-  font-size: 15px;
-  font-weight: bold;
-}
 /* 
-<!-- ================================================= -->
-<!-- SLIDER DE IMAGENES -->
-<!-- ================================================= -->
- */
-#carousel{
-  background-color: #6c757d;
-}
+  <!-- ================================================= -->
+  <!-- SLIDER DE IMAGENES -->
+  <!-- ================================================= -->
+   */
+#carousel {
+  background-color: #6c757d; }
 
 .carousel-inner {
   margin-top: 100px;
   margin: auto;
   max-height: 39rem;
-  max-width: 39rem;
-}
+  max-width: 39rem; }
 
 /* 
-<!-- ================================================= -->
-<!-- INTRO-->
-<!-- ================================================= -->
- */
+  <!-- ================================================= -->
+  <!-- INTRO-->
+  <!-- ================================================= -->
+   */
+#los-mejores-de-medellin a {
+  transition: background-color 0.5s; }
 
-#los-mejores-de-medellin a:hover{
-  transition: .5s;
-background-color: lightcyan;
-}
-#te-puede-interesar{
-  background-color: #edf6f9;
-}
+#los-mejores-de-medellin:hover {
+  background-color: lightcyan; }
+
+#te-puede-interesar {
+  background-color: #edf6f9; }
+
 /* 
-<!-- ================================================= -->
-<!-- PRUEBA ESTO-->
-<!-- ================================================= -->
- */
-#prueba-esto-titulo{
-  background-color: lightcoral;
-}
+  <!-- ================================================= -->
+  <!-- PRUEBA ESTO-->
+  <!-- ================================================= -->
+   */
+#prueba-esto-titulo {
+  background-color: lightcoral; }
 
-#prueba-esto{
-  background-color: lightcoral;
-}
+#prueba-esto {
+  background-color: lightcoral; }
+
 /* 
-<!-- ================================================= -->
-<!-- VIDEO RECETA-->
-<!-- ================================================= -->
- */
-
- #video {
-  background-clip: url(https://www.youtube.com/watch?v=2IOl1htRC5A);
-  background-color: darkseagreen;
-  width: 100%;
-  height: 500px;
-}
-
-iframe {
-  width: 700px;
-  height: 500px;
-}
-
+  <!-- ================================================= -->
+  <!-- VIDEO RECETA-->
+  <!-- ================================================= -->
+   */
 .video {
   background-color: lightblue;
   padding-bottom: 5px;
   display: flex;
-  justify-content: center;
-}
+  justify-content: center; }
+  .video #video {
+    background-clip: url(https://www.youtube.com/watch?v=2IOl1htRC5A);
+    background-color: darkseagreen;
+    width: 100%;
+    height: 500px; }
+
+iframe {
+  width: 700px;
+  height: 500px; }
 
 .wrapper {
   width: 50%;
   margin-left: 100px;
-  padding-top: 150px;
-}
+  padding-top: 150px; }
 
 /* 
-<!-- ================================================= -->
-<!-- SOBRE MI-->
-<!-- ================================================= -->
- */
+  <!-- ================================================= -->
+  <!-- SOBRE MI-->
+  <!-- ================================================= -->
+   */
 #sobre-mi {
-  background-color: aliceblue;
-}
-
+  background-color: aliceblue; }
 
 /* 
-<!-- ================================================= -->
-<!-- FOOTER-->
-<!-- ================================================= -->
- */
-footer{
-  background: #dc3545;
-  min-width: 100px;
-
-}
-
-footer p{
-  color: #f3f3f3;
-  text-align: center;
-}
-
-#iconos i {
-font-size: 26px;
-padding: 0 8px;
-color: #f3f3f3;
-}
-
-
-
+  <!-- ================================================= -->
+  <!-- FOOTER-->
+  <!-- ================================================= -->
+   */
 /* 
-<!-- ================================================= -->
-<!-- MEDIA QUERIES LG-->
-<!-- ================================================= -->
- */
-
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES LG-->
+  <!-- ================================================= -->
+   */
 @media (max-width: 1200px) {
   .video {
     flex-wrap: wrap;
-    padding-top: 30px;
-  }
-
+    padding-top: 30px; }
   .wrapper {
     width: 90%;
     margin: auto;
-    padding-top: 50px;
-  }
-}
+    padding-top: 50px; } }
 
 /* 
-<!-- ================================================= -->
-<!-- MEDIA QUERIES SM-->
-<!-- ================================================= -->
- */
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES SM-->
+  <!-- ================================================= -->
+   */
 @media (max-width: 768px) {
   #sobre-mi-texto p {
-    display: none;
-  }
+    display: none; }
   #sobre-mi-texto {
-    margin-bottom: 1px;
-  }
-
+    margin-bottom: 1px; }
   #sobre-mi-foto {
-    margin-top: 2px;
-  }
-  #te-puede-interesar{
-    width: 90% !important;
-  }
+    margin-top: 2px; }
+  #te-puede-interesar {
+    width: 90% !important; }
   #prueba-esto-titulo {
-    width: 90% !important;
-  }
+    width: 90% !important; }
   .prueba-esto-fila {
     width: 100% !important;
-    text-align: center;
-  }
-
-  #bg-footer{
-    top: -82px;
- 
-  }
-}
+    text-align: center; }
+  #bg-footer {
+    top: -82px; } }
 
 /* 
-<!-- ================================================= -->
-<!-- MEDIA QUERIES XSM-->
-<!-- ================================================= -->
- */
-
+  <!-- ================================================= -->
+  <!-- MEDIA QUERIES XSM-->
+  <!-- ================================================= -->
+   */
 @media (max-width: 576px) {
   .icono-wrap {
     flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-
+    justify-content: center !important; }
   iframe {
     width: 320px;
-    height: 250px;
-  }
-  
-}
+    height: 250px; } }
