@@ -56,9 +56,6 @@ html {
 }
 
 #menu {
-  .navbar-toggler {
-    transition: none;
-  }
   button {
     font-size: 15px;
     font-weight: bold;
@@ -155,7 +152,9 @@ iframe {
 #sobre-mi {
   @extend #te-puede-interesar;
 }
-
+#boton{
+  display: none;
+}
 
 
 
@@ -190,6 +189,9 @@ iframe {
   <!-- ================================================= -->
    */
 @media (max-width: 768px) {
+  #boton{
+    display: block;
+  }
   #sobre-mi-texto p {
     display: none;
   }
@@ -223,6 +225,9 @@ iframe {
    */
 
 @media (max-width: 576px) {
+  #boton{
+    display: block;
+  }
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;

@@ -26,9 +26,6 @@ html {
   background-color: transparent;
   transition: background-color 0.5s; }
 
-#menu .navbar-toggler, #iconos-encabezado i:hover .navbar-toggler, #prueba-esto-titulo i:hover .navbar-toggler {
-  transition: none; }
-
 #menu button, #iconos-encabezado i:hover button, #prueba-esto-titulo i:hover button {
   font-size: 15px;
   font-weight: bold; }
@@ -100,6 +97,9 @@ iframe {
   <!-- SECCION: ACERCA DE MI-->
   <!-- ================================================= -->
    */
+#boton {
+  display: none; }
+
 /* 
   <!-- ================================================= -->
   <!-- FOOTER-->
@@ -137,6 +137,8 @@ footer {
   <!-- ================================================= -->
    */
 @media (max-width: 768px) {
+  #boton {
+    display: block; }
   #sobre-mi-texto p {
     display: none; }
   #sobre-mi-texto {
@@ -159,6 +161,8 @@ footer {
   <!-- ================================================= -->
    */
 @media (max-width: 576px) {
+  #boton {
+    display: block; }
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important; }
