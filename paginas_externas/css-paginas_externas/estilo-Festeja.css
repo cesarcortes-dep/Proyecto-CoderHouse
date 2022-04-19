@@ -13,7 +13,17 @@ html {
 <!-- ================================================= -->
 <!-- ENCABEZADO -->
 <!-- ================================================= --> */
+#iconos-encabezado i {
+  font-size: 26px;
+  padding: 0 8px;
+  background-color: transparent;
+  transition: background-color 0.5s;
+}
 
+#iconos-encabezado i:hover {
+  background-color: #f4978e;
+
+}
 
 #menu a {
   font-size: 16px;
