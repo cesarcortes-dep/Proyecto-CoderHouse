@@ -100,6 +100,10 @@ html {
 <!-- SOBRE MI-->
 <!-- ================================================= -->
  */
+ #boton{
+  display: none;
+}
+
 #sobre-mi {
   background-color: aliceblue;
 }
@@ -132,6 +136,7 @@ footer p {
  */
 
 @media (max-width: 1200px) {
+
   .video {
     flex-wrap: wrap;
     padding-top: 30px;
@@ -150,6 +155,9 @@ footer p {
 <!-- ================================================= -->
  */
 @media (max-width: 768px) {
+  #boton{
+    display: block;
+  }
   #sobre-mi-texto p {
     display: none;
   }
@@ -183,6 +191,9 @@ footer p {
  */
 
 @media (max-width: 576px) {
+  #boton{
+    display: block;
+  }
   .icono-wrap {
     flex-wrap: wrap;
     justify-content: center !important;

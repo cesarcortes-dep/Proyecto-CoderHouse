@@ -31,13 +31,20 @@ html {
   font-weight: bold; }
 
 #menu a, #iconos-encabezado i:hover a, #prueba-esto-titulo i:hover a {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: bold;
   color: #dc3445;
   background-color: transparent;
   transition: background-color 0.5s; }
   #menu a:hover, #iconos-encabezado i:hover a:hover, #prueba-esto-titulo i:hover a:hover {
     background-color: #f4978e; }
+
+/* 
+<!-- ================================================= -->
+<!-- DESCRIPCION -->
+<!-- ================================================= --> */
+#descripcion {
+  background-color: #edf6f9; }
 
 /* 
   <!-- ================================================= -->

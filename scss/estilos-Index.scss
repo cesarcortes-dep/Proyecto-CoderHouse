@@ -61,7 +61,7 @@ html {
     font-weight: bold;
   }
   a {
-    font-size: 16px;
+    font-size: 25px;
     font-weight: bold;
     color: #dc3445;
     background-color: transparent;
@@ -72,6 +72,13 @@ html {
   }
 }
 
+/* 
+<!-- ================================================= -->
+<!-- DESCRIPCION -->
+<!-- ================================================= --> */
+#descripcion{
+  background-color: map-get($estilos, secundario);
+}
 /* 
   <!-- ================================================= -->
   <!-- SECCION: SLIDER DE IMAGENES -->
