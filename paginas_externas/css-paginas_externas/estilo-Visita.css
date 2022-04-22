@@ -6,7 +6,7 @@ html {
 .body {
   font-family: "Roboto Serif", sans-serif;
   overflow-x: hidden;
-  background-color: lightblue;
+  background-color: #a0c4ff;
 }
 /* 
 <!-- ================================================= -->
@@ -21,18 +21,18 @@ html {
 }
 
 #iconos-encabezado i:hover {
-  background-color: #f4978e;
+  background-color: #a0c4ff;
 
 }
 #menu a {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
-  color: #dc3445;
+  color: #167AC6;
   background-color: transparent;
   transition: background-color 0.5s;
 }
 #menu a:hover {
-  background-color: #f4978e;
+  background-color: #a0c4ff;
 }
 
 

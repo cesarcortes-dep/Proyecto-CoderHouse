@@ -14,12 +14,17 @@ html {
 .body, .video {
   font-family: "Roboto Serif", sans-serif;
   overflow-x: hidden;
-  background-color: #add8e6; }
+  background-color: #a0c4ff; }
 
 /* 
   <!-- ================================================= -->
   <!-- ENCABEZADO -->
   <!-- ================================================= --> */
+.modal-header {
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+  background-color: #a0c4ff; }
+
 #iconos-encabezado i, #prueba-esto-titulo i {
   font-size: 26px;
   padding: 0 8px;
@@ -31,13 +36,13 @@ html {
   font-weight: bold; }
 
 #menu a, #iconos-encabezado i:hover a, #prueba-esto-titulo i:hover a {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  color: #dc3445;
+  color: #167AC6;
   background-color: transparent;
   transition: background-color 0.5s; }
   #menu a:hover, #iconos-encabezado i:hover a:hover, #prueba-esto-titulo i:hover a:hover {
-    background-color: #f4978e; }
+    background-color: #a0c4ff; }
 
 /* 
 <!-- ================================================= -->
@@ -64,9 +69,8 @@ html {
    */
 #los-mejores-de-medellin a {
   transition: background-color 0.5s; }
-
-#los-mejores-de-medellin:hover {
-  background-color: lightcyan; }
+  #los-mejores-de-medellin a:hover {
+    background-color: #a0c4ff; }
 
 #te-puede-interesar, #prueba-esto, #sobre-mi {
   background-color: #edf6f9; }
