@@ -41,83 +41,20 @@ html {
 
 /* 
 <!-- ================================================= -->
-<!-- SLIDER DE IMAGENES -->
-<!-- ================================================= -->
- */
-#carousel{
-  background-color: #6c757d;
-}
-
-.carousel-inner {
-  margin-top: 100px;
-  margin: auto;
-  max-height: 39rem;
-  max-width: 39rem;
-}
-
-/* 
-<!-- ================================================= -->
-<!-- INTRO-->
-<!-- ================================================= -->
- */
-
-#los-mejores-de-medellin a:hover{
-  transition: .5s;
-background-color: lightcyan;
-}
-#te-puede-interesar{
-  background-color: #edf6f9;
-}
-/* 
-<!-- ================================================= -->
-<!-- PRUEBA ESTO-->
-<!-- ================================================= -->
- */
-#prueba-esto-titulo{
-  background-color: lightcoral;
-}
-
-#prueba-esto{
-  background-color: lightcoral;
-}
-/* 
-<!-- ================================================= -->
-<!-- VIDEO RECETA-->
-<!-- ================================================= -->
- */
-
- #video {
-  background-clip: url(https://www.youtube.com/watch?v=2IOl1htRC5A);
-  background-color: darkseagreen;
-  width: 100%;
-  height: 500px;
-}
-
-iframe {
-  width: 700px;
-  height: 500px;
-}
-
-.video {
-  background-color: lightblue;
-  padding-bottom: 5px;
-  display: flex;
-  justify-content: center;
-}
-
-.wrapper {
-  width: 50%;
-  margin-left: 100px;
-  padding-top: 150px;
-}
-
-/* 
-<!-- ================================================= -->
 <!-- SOBRE MI-->
 <!-- ================================================= -->
  */
 #sobre-mi {
   background-color: aliceblue;
+}
+
+#iconos-sobre-mi{
+  background-color: transparent;
+}
+#iconos-sobre-mi i{
+  font-size: 50px;
+  padding: 0 50px;
+  color: #DC3445;
 }
 
 
@@ -170,25 +107,13 @@ color: #f3f3f3;
 <!-- ================================================= -->
  */
 @media (max-width: 768px) {
-  #sobre-mi-texto p {
-    display: none;
-  }
+
   #sobre-mi-texto {
     margin-bottom: 1px;
   }
 
   #sobre-mi-foto {
     margin-top: 2px;
-  }
-  #te-puede-interesar{
-    width: 90% !important;
-  }
-  #prueba-esto-titulo {
-    width: 90% !important;
-  }
-  .prueba-esto-fila {
-    width: 100% !important;
-    text-align: center;
   }
 
   #bg-footer{
