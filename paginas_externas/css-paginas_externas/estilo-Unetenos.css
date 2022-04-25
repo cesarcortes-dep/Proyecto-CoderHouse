@@ -51,8 +51,8 @@ html {
 .carousel-inner {
   margin-top: 100px;
   margin: auto;
-  max-height: 39rem;
-  max-width: 39rem;
+  max-height: 20rem;
+  max-width: 20px;
 }
 
 /* 
