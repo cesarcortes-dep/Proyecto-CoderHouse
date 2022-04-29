@@ -7,7 +7,6 @@
     <link rel="icon" href="css-paginas_externas/IdealTripLogo.png">
     <title>Sobre nosotros</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300;700;900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css-paginas_externas/estilo-Sobre_nosotros.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css-paginas_externas/estilo-Sobre_nosotros.css">
 
     <script src="https://kit.fontawesome.com/2f169e8579.js" crossorigin="anonymous"></script>
     <meta name="keywords" content="blog, medellin, parcha, visita, comida, receta, turismo">
@@ -33,145 +33,47 @@
     <!-- ENCABEZADO -->
     <!-- ================================================= -->
 
+    <header>
 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-5" id="menu">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <img src="css-paginas_externas/IdealTrip.png" width="250" height="100"
+                        class="d-inline-block align-top" alt="IdealTripLogo">
+                    <span class="text-danger fs-4 fw-bold"></span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light p-5" id="menu">
-        <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="css-paginas_externas/IdealTrip.png" width="250" height="100" class="d-inline-block align-top"
-                    alt="IdealTripLogo">
-                <span class="text-danger fs-4 fw-bold"></span> </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visita.html">Visita</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="visita.html">Visita</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="parcha.html">Parcha</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="parcha.html">Parcha</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="festeja.html">Festeja</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="festeja.html">Festeja</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="unetenos.html">Unetenos</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="unetenos.html">Unetenos</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
+                        </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a>
-                    </li>
-
-                </ul>
-                <div id="iconos-encabezado">
-
-                    <a href="https://www.instagram.com/cort_cesar_/?hl=es-la" target="_blank"><i
-                            class="bi bi-instagram"></i></a>
-                    <a href="https://github.com/cesarcortes-dep/Proyecto-CoderHouse.git" target="_blank"><i
-                            class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/cesar-mateo-cortes-leon-b823a2206 " target="_blank"><i
-                            class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-
-
-    <!-- ================================================= -->
-    <!-- ACERCA DE MI -->
-    <!-- ================================================= -->
-    <section class="container-fluid mt-5 ">
-        <div class="row w-75 mx-auto text-center" id="sobre-mi">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center my-5 icono-wrap"
-                id="sobre-mi-texto">
-                <div>
-                    <h1 class="mt-1 px-4 pb-2 fw-bold"> HOLA, SOY CESÁR...</h1>
-                    <h2 class=" fst-italic justify-content-center mt-5">"Soy un amante de las nuevas tecnologías y la buena comida"</h2>
-                    <h4 class="fw-bold mt-4">Técnico en ingeniera de sistemas Desarrollador Frontend</h4>
-                    <p class="px-4 lh-lg justify-content-between mt-3" id="texto-sobre-mi">
-                        Soy una persona con una alta capacidad de
-                        compromisos, liderazgo, decisión e iniciativa.
-                        Excelentes relaciones interpersonales y trabajo
-                        en equipo. Voluntad de superación y progreso
-                        habilidad en la realización en actividades,
-                        planeación y organización
-                     </p>
-
-                     <p  class="d-block mt-5">
-                         <h3 class="fw-bold text-decoration-none">QUICK INFO:</h3>
-                         <a class="fw-bold text-decoration-none text-dark">Ubicación:</a> Medellín, Colombia<br>
-                         <a class="fw-bold text-decoration-none text-dark">Edad:</a> 23 Años.<br>
-                         <a class="fw-bold text-decoration-none text-dark">Educación:</a> <a class="fst-italic text-decoration-none text-dark">Politecnico GranColombiano, Udemy, CoderHouse.</a>
-                     </p>
-                </div>
-            </div>
-
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center my-5 icono-wrap mt-1"
-                id="sobre-mi-foto">
-                <img src="css-paginas_externas/foto-perfil.JPG" class=" rounded mx-auto d-block img-thumbnail img-fluid"
-                    width="200" alt="foto de perfil">
-
-            </div>
-        </div>
-        <div id="iconos-sobre-mi" class=" container-fluid mt-1">
-            <div class="pd-3 row w-75 mx-auto text-center justify-content-center">
-                <h1  class="fst-italic text-danger fw-bold mt-5">Mis conocimientos: </h1>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-2"><a href="#"><i class="bi bi-filetype-html"></i></a></div>
-
-                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-2"><a href="#"><i class="bi bi-filetype-css"></i></a></div>
-
-                <div class="col-xl-3 col-lg-3 col-md-0 col-sm-12 mt-2"><a href="#"><i class="bi bi-filetype-sass"></i></a></div>
-
-                <div class="col-xl-3 col-lg-3 col-md-0 col-sm-12 mt-2"> <a href="#"><i class="bi bi-bootstrap"></i></a></div>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- ================================================= -->
-    <!--  FOOTER -->
-    <!-- ================================================= -->
-
-
-
-    <footer class="bg-danger text-white pt-5 pb-4  mt-2">
-        <div class="container text-center text-md-left">
-
-            <div class="row text-center text-md-left">
-
-                <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
-
-                    <h5 class="mb-4 font-weight-bold text-white">IdealTrip</h5>
-                    <img src="css-paginas_externas/IdealTripLogo.png" class=" rounded mx-auto d-block img-fluid"
-                        width="120" alt="foto de perfil">
-                </div>
-
-                <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
-
-                    <h5 class="mb-4 font-weight-bold text-white">IdealTrip</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia, esse? Ipsum eaque numquam
-                        quia
-                        error, suscipit pariatur cupiditate illo aliquid minus, deleniti rem est fuga repudiandae
-                        consequatur tempora. Iste, ex?</p>
-                </div>
-
-                <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
-                    <h5 class="mb-4 font-weight-bold text-white">Contactanos</h5>
-                    <p class="text-light mb-0 pd-2 fs-6">(+57) 300-850-847-8</p>
-                    <div id="iconos">
+                    </ul>
+                    <div id="iconos-encabezado">
 
                         <a href="https://www.instagram.com/cort_cesar_/?hl=es-la" target="_blank"><i
                                 class="bi bi-instagram"></i></a>
@@ -182,12 +84,120 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <p class="fs-5 px-3 pt-3"> Ideal Trip &copy; Todos Los Derechos Reservados 2022 </p>
-    </footer>
+        </nav>
+    </header>
 
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <script src="js.index/index.js"></script>
+
+
+    <!-- ================================================= -->
+    <!-- ACERCA DE MI -->
+    <!-- ================================================= -->
+    <main>
+        <section class="container-fluid mt-5 ">
+            <div class="row w-75 mx-auto text-center" id="sobre-mi">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center my-5 icono-wrap"
+                    id="sobre-mi-texto">
+                    <div>
+                        <h1 class="mt-1 px-4 pb-2 fw-bold"> HOLA, SOY CESÁR...</h1>
+                        <h2 class=" fst-italic justify-content-center mt-5">"Soy un amante de las nuevas tecnologías y
+                            la
+                            buena comida"</h2>
+                        <h4 class="fw-bold mt-4">Técnico en ingeniera de sistemas Desarrollador Frontend</h4>
+                        <p class="px-4 lh-lg justify-content-between mt-3" id="texto-sobre-mi">
+                            Soy una persona con una alta capacidad de
+                            compromisos, liderazgo, decisión e iniciativa.
+                            Excelentes relaciones interpersonales y trabajo
+                            en equipo. Voluntad de superación y progreso
+                            habilidad en la realización en actividades,
+                            planeación y organización
+                        </p>
+
+                        <p class="d-block mt-5">
+                        <h3 class="fw-bold text-decoration-none">QUICK INFO:</h3>
+                        <a class="fw-bold text-decoration-none text-dark">Ubicación:</a> Medellín, Colombia<br>
+                        <a class="fw-bold text-decoration-none text-dark">Edad:</a> 23 Años.<br>
+                        <a class="fw-bold text-decoration-none text-dark">Educación:</a> <a
+                            class="text-decoration-none text-dark">Politecnico GranColombiano, Udemy, CoderHouse.</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center my-5 icono-wrap mt-1"
+                    id="sobre-mi-foto">
+                    <img src="css-paginas_externas/foto-perfil.JPG"
+                        class=" rounded mx-auto d-block img-thumbnail img-fluid" width="200" alt="foto de perfil">
+
+                </div>
+            </div>
+            <div id="iconos-sobre-mi" class=" container-fluid mt-1">
+                <div class="pd-3 row w-75 mx-auto text-center justify-content-center">
+                    <h1 class="fst-italic text-danger fw-bold mt-5">Mis conocimientos: </h1>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-2"><a href="#"><i
+                                class="bi bi-filetype-html"></i></a></div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 mt-2"><a href="#"><i
+                                class="bi bi-filetype-css"></i></a></div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-0 col-sm-12 mt-2"><a href="#"><i
+                                class="bi bi-filetype-sass"></i></a></div>
+
+                    <div class="col-xl-3 col-lg-3 col-md-0 col-sm-12 mt-2"> <a href="#"><i
+                                class="bi bi-bootstrap"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
+
+<!-- ================================================= -->
+<!--  FOOTER -->
+<!-- ================================================= -->
+
+
+
+<footer class="bg-danger text-white pt-5 pb-4  mt-2">
+    <div class="container text-center text-md-left">
+
+        <div class="row text-center text-md-left">
+
+            <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
+
+                <h5 class="mb-4 font-weight-bold text-white">IdealTrip</h5>
+                <img src="css-paginas_externas/IdealTripLogo.png" class=" rounded mx-auto d-block img-fluid" width="120"
+                    alt="foto de perfil">
+            </div>
+
+            <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
+
+                <h5 class="mb-4 font-weight-bold text-white">IdealTrip</h5>
+                <p>IdealTrip es un foro dedicado al turismo, atracciones y la buena comida que puedes encontrar en
+                    la maravillosa ciudad de Medellín. Encontraras: Recetas Recomendaciones Guías de turista y mucho
+                    más!</p>
+            </div>
+
+            <div class="col-md-12 col-lg-4 col-xl-4 mx-auto mt-2">
+                <h5 class="mb-4 font-weight-bold text-white">Contactanos</h5>
+                <p class="text-light mb-0 pd-2 fs-6">(+57) 300-850-847-8</p>
+                <div id="iconos">
+
+                    <a href="https://www.instagram.com/cort_cesar_/?hl=es-la" target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://github.com/cesarcortes-dep/Proyecto-CoderHouse.git" target="_blank"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://www.linkedin.com/in/cesar-mateo-cortes-leon-b823a2206 " target="_blank"><i
+                            class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="fs-5 px-3 pt-3"> Ideal Trip &copy; Todos Los Derechos Reservados 2022 </p>
+</footer>
+
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+<script src="js.index/index.js"></script>
+
 
 </html>
